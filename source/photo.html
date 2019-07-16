@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк - Фото</title>
+</head>
+<body>
+
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">PINK</a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav_list site-list">
+        <li class="site-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
+        <li class="site-list__item"><a href="#">ФОТОГРАФИИ</a></li>
+        <li class="site-list__item"><a href="#">КОНКУРС</a></li>
+        <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1 class="page-header__drawing">Фотографии пользователей</h1>
+</header>
+<main class="main-page">
+  <section class="photos">
+    <div class="photos__wrapper">
+      <h2 class="photos-header">Взгляните на фотографии, которые выкладывают
+        пользователи! Видите, как не хватает ваших?</h2>
+      <ul class="photos__list">
+        <li class="photos__item photo__item--photo-of-the-day">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Анна</span>
+            <span class="photos__how-long-ago">(5 МИНУТ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите
+            прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 215
+          </p>
+        </li>
+        <li class="photos__item">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Левон</span>
+            <span class="photos__how-long-ago">(5 ЧАСОВ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Вчера он на луну летат, сегодня в руки к нам попал.
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 356
+          </p>
+        </li>
+        <li class="photos__item">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Антон</span>
+            <span class="photos__how-long-ago">(12 ЧАСОВ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Соседы будут рады!
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 666
+          </p>
+        </li>
+        <li class="photos__item">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Борис</span>
+            <span class="photos__how-long-ago">(20 ЧАСОВ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 215
+          </p>
+        </li>
+        <li class="photos__item">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Сергей</span>
+            <span class="photos__how-long-ago">(25 ЧАСОВ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Самая кубанская в мире!
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 4
+          </p>
+        </li>
+        <li class="photos__item">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Максим</span>
+            <span class="photos__how-long-ago">(40 ЧАСОВ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Где снег-то?
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 150
+          </p>
+        </li>
+        <li class="photos__item">
+          <img class="photos__photo" src="#" alt="Фото">
+          <div class="photos__author-and-ago">
+            <span class="photos__author">Надежда</span>
+            <span class="photos__how-long-ago">(45 ЧАСОВ НАЗАД)</span>
+          </div>
+          <p class="photos__desc">
+            Всем GM и взаимные лайки!
+          </p>
+          <p class="photos__likes">
+            НРАВИТСЯ: 2560
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="add-photo">
+    <h2 class="add-photo__header">
+      Затмите всех!
+      Выкладывайте все, что накопилось в телефоне!
+    </h2>
+    <img src="#" class="add-photo__photo" alt="Добавляемое фото">
+    <ul class="add-photo__effects-list">
+      <li class="add-photo__effect-button add-photo__effect-button--1"></li>
+      <li class="add-photo__effect-button add-photo__effect-button--2"></li>
+      <li class="add-photo__effect-button add-photo__effect-button--3"></li>
+    </ul>
+    <label class="add-photo__range-label" for="range-input"></label>
+    <input type="range" id="range-input">
+    <div class="add-photo__buttons">
+      <button class="button add-photo__button">Запостить</button>
+      <button class="button add-photo__button add-photo__button--inactive">Отменить</button>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <a class="page-footer__logo" href="#"><img src="#" alt="logo"></a>
+  <ul class="social">
+    <li class="social__item">
+      <a class="social__button social__button--twitter"></a>
+    </li>
+    <li class="social__item">
+      <a class="social__button social__button--facebook"></a>
+    </li>
+    <li class="social__item">
+      <a class="social__button social__button--play"></a>
+    </li>
+  </ul>
+  <p class="page-footer__copyright">
+    Разработано
+  </p>
+</footer>
+</body>
+</html>
