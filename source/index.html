@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" >
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - Главная</title>
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">PINK</a>
+  <a class="page-header__logo">PINK</a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav_list site-list">
-      <li class="site-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
-      <li class="site-list__item"><a href="#">ФОТОГРАФИИ</a></li>
-      <li class="site-list__item"><a href="#">КОНКУРС</a></li>
+      <li class="site-list__item"><a>ГЛАВНАЯ</a></li>
+      <li class="site-list__item"><a href="photo.html">ФОТОГРАФИИ</a></li>
+      <li class="site-list__item"><a href="form.html">КОНКУРС</a></li>
       <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
     </ul>
   </nav>
 </header>
-
 <main class="page-main">
   <h1 class="visually-hidden">Пинк - Взгляните на жизнь иначе!</h1>
   <section class="download">
-    <h2 class=visually-hidden">Загрузить прилоложение</h2>
+    <h2 class="visually-hidden">Загрузить прилоложение</h2>
     <div class="download__wrapper">
-      <button class="button button__download " type="button">Скачать приложение</button>
+      <a class="download__link" href="https://www.apple.com/itunes/">Скачать приложение</a>
       <ul class="download__list">
-        <li class="download__item download__item--ios"><a></a></li>
-        <li class="download__item download__item--android"><a></a></li>
-        <li class="download__item download__item--win"><a></a></li>
+        <li class="download__item download__item--ios"><a href="#"></a></li>
+        <li class="download__item download__item--android"><a href="#"></a></li>
+        <li class="download__item download__item--win"><a href="#"></a></li>
       </ul>
-      <p class="description description--download">Доступно для Iphone, IPad,
+      <p class="download__description">Доступно для Iphone, IPad,
         Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </section>
@@ -37,22 +36,22 @@
   <section class="features">
     <h2 class="visually-hidden">Что мы делаем</h2>
     <div class="features__wrapper">
-      <ul class="features__header">
-        <li class="features__header-item">Устали от серости мегаполиса?</li>
-        <li class="features__header-item">Нам есть, что вам предложить!</li>
-      </ul>
-      <ul class="features__footer">
-        <li class="features__footer-item">
+      <div class="features__header">
+        <p class="features__header-item">Устали от серости мегаполиса?</p>
+        <p class="features__header-item">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="features__content">
+        <li class="features__content-item">
           <h3 class="features__title">Поднимаем настроение</h3>
           <p class="features__description">Приложение позволит вам победить
             осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
-        <li class="features__footer-item">
+        <li class="features__content-item">
           <h3 class="features__title">Меняет мир вокруг</h3>
           <p class="features__description">Сделайте снимок и украсьте его
             смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
-        <li class="features__footer-item">
+        <li class="features__content-item">
           <h3 class="features__title">Заводит новых друзей</h3>
           <p class="features__description">Ставьте лайки, комментируйте,
             делитесь фотографиями с друзьями и заводите новых</p>
@@ -65,13 +64,13 @@
     <div class="feedbacks__wrapper slider">
       <div class="feedbacks__list slider__list">
         <blockquote class="feedbacks__item slider__item">
-          <h3 class="feed-backs__author">Николай Петров</h3>
-          <p class="feed-backs__text">«Это приложение перевернуло
+          <h3 class="feedbacks__author">Николай Петров</h3>
+          <p class="feedbacks__text">«Это приложение перевернуло
             мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к
             выложенной фотографии!»</p>
         </blockquote>
-        <div class="feedbacks__toggle slider__toggle">
+        <div class="feedbacks__toggle slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
@@ -82,54 +81,58 @@
   <section class="pricing">
     <h2 class="visually-hidden">Цены</h2>
     <div class="pricing__wrapper slider">
-      <div class="pricing__list slider__list">
-        <div class="pricing__item slider__item">
-          <h3 class="pricing__title">БАЗА</h3>
-          <p class="pricing__value">1.99 USD</p>
-          <ul class="pricing__features">
-            <li class="pricing___features-item pricing___features-item--available">
-              РОЗОВЫЙ ФИЛЬТР
-            </li>
-            <li class="pricing___features-item pricing___features-item--disable">
-              СМАЙЛИКИ
-            </li>
-            <li class="pricing___features-item pricing___features-item--disable">
-              КОММЕНТАРИИ
-            </li>
-          </ul>
-        </div>
-        <div class="pricing__item slider__item">
-          <h3 class="pricing__title">СТАНДАРТ</h3>
-          <p class="pricing__value">3.99 USD</p>
-          <ul class="pricing__features">
-            <li class="pricing___features-item pricing___features-item--available">
-              РОЗОВЫЙ ФИЛЬТР
-            </li>
-            <li class="pricing___features-item pricing___features-item--available">
-              СМАЙЛИКИ
-            </li>
-            <li class="pricing___features-item pricing___features-item--disable">
-              КОММЕНТАРИИ
-            </li>
-          </ul>
-        </div>
-        <div class="pricing__item slider__item">
-          <h3 class="pricing__title">АНЛИМ</h3>
-          <p class="pricing__value">9.99 USD</p>
-          <ul class="pricing__features">
-            <li class="pricing___features-item pricing___features-item--available">
-              РОЗОВЫЙ ФИЛЬТР
-            </li>
-            <li class="pricing___features-item pricing___features-item--available">
-              СМАЙЛИКИ
-            </li>
-            <li class="pricing___features-item pricing___features-item--available">
-              КОММЕНТАРИИ
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="pricing__toggle slider__toggle">
+      <div class=" slider__list">
+        <table class="pricing__list">
+          <tr>
+            <th class="pricing__header">
+              <h3 class="pricing__title">БАЗА</h3>
+              <p class="pricing__value">1.99 USD</p>
+            </th>
+            <th class="pricing__header pricing__header--hit">
+              <h3 class="pricing__title">СТАНДАРТ</h3>
+              <p class="pricing__value">3.99 USD</p>
+            </th>
+            <th class="pricing__header">
+              <h3 class="pricing__title">АНЛИМ</h3>
+              <p class="pricing__value">9.99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="pricing___features-item">
+              <span class="pricing__feature pricing___feature--available">РОЗОВЫЙ ФИЛЬТР</span>
+            </td>
+            <td class="pricing___features-item">
+              <span class="pricing__feature pricing___feature--available">РОЗОВЫЙ ФИЛЬТР</span>
+            </td>
+            <td class="pricing___features-item">
+              <span class="pricing__feature pricing___feature--available">РОЗОВЫЙ ФИЛЬТР</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="pricing___features-item ">
+              <span class="pricing__feature pricing___feature--disable">СМАЙЛИКИ</span>
+            </td>
+            <td class="pricing___features-item  pricing___features-item--available">
+              <span class="pricing__feature pricing___feature--available">СМАЙЛИКИ</span>
+            </td>
+            <td class="pricing___features-item  pricing___features-item--available">
+              <span class="pricing__feature pricing___feature--available">СМАЙЛИКИ</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="pricing___features-item">
+              <span class="pricing__feature pricing___feature--disable">КОММЕНТАРИИ</span>
+            </td>
+            <td class="pricing___features-item">
+              <span class="pricing__feature pricing___feature--disable">КОММЕНТАРИИ</span>
+            </td>
+            <td class="pricing___features-item">
+              <span class="pricing__feature pricing___feature--available">КОММЕНТАРИИ</span>
+            </td>
+          </tr>
+        </table>
+
+      <div class="pricing__toggle slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
@@ -144,11 +147,11 @@
     <ul class="contacts__list">
       <li class="contacts__item">
         <p class="contacts__spec">Звоните:</p>
-        <p class="contacts__data">+7(812) 555-66-66</p>
+        <a class="contacts__phone" href="tel:+78125556666">+7(812) 555-66-66</a>
       </li>
       <li class="contacts__item">
         <p class="contacts__spec">Пишите:</p>
-        <p class="contacts__data">mail@htmlacademy.ru</p>
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </li>
       <li class="contacts__item">
         <p class="contacts__spec">Приезжайте в гости:</p>
@@ -156,7 +159,6 @@
       </li>
     </ul>
     <div class="contacts__map">
-      <img class="contacts__map-img" src="#" alt="Map"/>
     </div>
   </div>
 </footer>

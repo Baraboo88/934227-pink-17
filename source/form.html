@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк - Форма</title>
@@ -11,36 +11,36 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav_list site-list">
       <li class="site-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
-      <li class="site-list__item"><a href="#">ФОТОГРАФИИ</a></li>
-      <li class="site-list__item"><a href="#">КОНКУРС</a></li>
+      <li class="site-list__item"><a href="photo.html">ФОТОГРАФИИ</a></li>
+      <li class="site-list__item"><a>КОНКУРС</a></li>
       <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
     </ul>
   </nav>
-  <h1 class="page-header__drawing">Конкурс на самое безбашенное путешествие с
+  <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с
     Пинк</h1>
 </header>
 <main class="page-main">
   <h2 class="visually-hidden">Форма для заполнения</h2>
-  <div class="form__wrapper">
-    <h3 class="form__header">
+    <h3 class="page-main__content-header">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
       миль на вашу бонусную карту! Пожалуйста, заполните
     </h3>
     <form class="form">
+      <div class="form__wrapper">
       <ul class="form__name">
-        <li class="form__name-item form-with-text-fields-item">
-          <label class="form__name-label form-label" for="surname">ФАМИЛИЯ:</label>
-          <input class="form__name-field form-field" required
+        <li class="form__name-item ">
+          <label class="form__name-label" for="surname">ФАМИЛИЯ:</label>
+          <input class="form__field" required
                  type="text" id="surname" placeholder="Укажите фамилию*">
         </li>
-        <li class="form__name-item form-item-with-text-fields-item">
-          <label class="form__name-label form-label" for="name">ИМЯ:</label>
-          <input class="form__name-patronymic form-field" required
+        <li class="form__name-item ">
+          <label class="form__name-label" for="name">ИМЯ:</label>
+          <input class="form__field" required
                  type="text" id="name" placeholder="Введите ваше имя*">
         </li>
-        <li class="form__name-item form-item-with-text-fields-item">
-          <label class="form__name-label form-label" for="patronymic">ОТЧЕСТВО:</label>
-          <input class="form__name-field form-field"
+        <li class="form__name-item ">
+          <label class="form__name-label" for="patronymic">ОТЧЕСТВО:</label>
+          <input class="form__field"
                  type="text" id="patronymic" placeholder="Ну и отчество тоже">
         </li>
       </ul>
@@ -52,7 +52,7 @@
         </li>
         <li class="form__achievements-item">
           <input type="checkbox" id="checkbox-2">
-          <label class="form__checkbox-label" for="checkbox-2">Огорел на
+          <label class="form__checkbox-label" for="checkbox-2">Обгорел на
             пляже</label>
         </li>
         <li class="form__achievements-item">
@@ -92,15 +92,15 @@
       </ul>
       <ul class="form__app-radio">
         <li class="form__app-radio-item">
-          <input type="radio" id="ios">
+          <input type="radio" id="ios" name="form-radio">
           <label class="form__radio-label" for="ios">Pink для iOS</label>
         </li>
         <li class="form__app-radio-item">
-          <input type="radio" id="android">
+          <input type="radio" id="android" name="form-radio">
           <label class="form__radio-label" for="android">Pink на Android</label>
         </li>
         <li class="form__app-radio-item">
-          <input type="radio" id="win">
+          <input type="radio" id="win" name="form-radio">
           <label class="form__radio-label" for="win">Windows Phone</label>
         </li>
       </ul>
@@ -115,10 +115,10 @@
           </textarea>
         </div>
         <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ФОРМУ"/>
-        <p class="form__footer-clarification">*-ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+        <p class="form__footnote">*-ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+      </div>
       </div>
     </form>
-  </div>
 </main>
 <footer class="page-footer">
   <a class="page-footer__logo" href="#"><img src="#" alt="logo"></a>
