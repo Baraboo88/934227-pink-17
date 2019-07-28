@@ -1,9 +1,8 @@
 .download {
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: white;
   padding-top: 398px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png"),
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 110px, 0 -60px;
@@ -43,25 +42,22 @@
   width: 47px;
 }
 
-.download__item--ios {
+.download__item a {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
-  background: url("../../img/logo-apple.svg") no-repeat;
+}
+
+.download__item--ios {
+  background: url("../img/logo-apple.svg") no-repeat;
 }
 
 .download__item--android {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: url("../../img/logo-android.svg") no-repeat bottom;
+  background: url("../img/logo-android.svg") no-repeat bottom;
 }
 
 .download__item--win {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: url("../../img/logo-microsoft.svg") no-repeat bottom;
+  background: url("../img/logo-microsoft.svg") no-repeat bottom;
 }
 
 .download__description {
@@ -71,4 +67,3 @@
   line-height: 1.71;
   padding: 0;
 }
-
