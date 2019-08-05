@@ -27,10 +27,84 @@
   padding: 22px 20px;
   width: 320px;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .page-header__toggle {
   padding: 0;
   background-color: transparent;
   border: none;
+}
+
+.page-header__logo--tablet-logo {
+  display: none;
+}
+
+.page-header__logo--desktop-logo {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-header__top {
+    width: 660px;
+  }
+
+  .page-header__logo--tablet-logo {
+    display: block;
+  }
+
+  .page-header__logo--desktop-logo {
+    display: none;
+  }
+
+  .page-header__logo--mobile-logo {
+    display: none;
+  }
+
+  .page-header__title {
+    width: 660px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 80px 90px 75px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -120px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header__top {
+    width: 1200px;
+    padding: 22px 120px;
+  }
+
+  .page-header__logo--tablet-logo {
+    display: none;
+  }
+
+  .page-header__logo--mobile-logo {
+    display: none;
+  }
+
+  .page-header__logo--desktop-logo {
+    display: block;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .main-nav_list {
+    display: flex;
+  }
+
+  .page-header__title {
+    width: 1200px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 80px 220px 75px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -120px;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }

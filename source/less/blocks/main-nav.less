@@ -1,13 +1,20 @@
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  box-sizing: border-box;
-}
-
 
 .main-nav_list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.main-nav--desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .main-nav--desktop {
+    display: block;
+  }
+
+  .main-nav--mobile-tablet {
+    display: none;
+  }
 }

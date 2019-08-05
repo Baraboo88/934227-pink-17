@@ -24,3 +24,54 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: 660px) {
+  .photos__wrapper {
+    width: 660px;
+  }
+
+  .photos__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .photos__item.photos__item--panorama-of-the-day {
+    width: 620px;
+    align-self: center;
+    align-items: center;
+  }
+
+  .photos__item--panorama-of-the-day .photo-card__photo-link {
+    width: 660px;
+  }
+
+  .photos__item:not(:first-child) {
+
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos__wrapper {
+    width: 1200px;
+  }
+
+  .photos__item.photos__item--panorama-of-the-day {
+    width: 940px;
+    padding-bottom: 15px;
+  }
+
+  .photos__list {
+    margin: 0 auto;
+    width: 940px;
+    justify-content: space-between;
+  }
+
+  .photos__item--panorama-of-the-day .photo-card__photo-link {
+    width: 1200px;
+  }
+}
