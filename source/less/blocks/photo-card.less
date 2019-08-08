@@ -29,11 +29,13 @@
 .photo-card__author {
   font-weight: bold;
   margin-right: 5px;
+  padding: 0;
 }
 
 .photo-card__how-long-ago {
   font-weight: 300;
   font-size: 12px;
+  padding: 0;
 }
 
 .photo-card__content {
@@ -50,33 +52,35 @@
   background: url("../img/icon-heart-red.svg") no-repeat 0 50%;
 }
 
-.photo-card__photo-tablet {
-  display: none;
-}
-
-.photo-card__photo-desktop {
-  display: none;
-}
-
 @media (min-width: 660px) {
-  .photo-card__photo-mobile {
-    display: none;
-  }
-
-  .photo-card__photo-desktop {
-    display: none;
-  }
-
-  .photo-card__photo-tablet {
-    display: block;
-  }
-
   .photo-card {
     width: 300px;
   }
 
-  .photo-card__footer--panorama {
-    display: none;
+  .photos__item:first-child .photo-card__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .photos__item:first-child .photo-card__header {
+    padding-bottom: 0;
+    margin-top: 25px;
+  }
+
+  .photos__item:first-child .photo-card__content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    order: 1;
+    padding: 0;
+  }
+
+  .photos__item:first-child .photo-card__footer {
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0 40px 0 0;
+    box-sizing: border-box;
   }
 
   .photo-card__footer {
@@ -98,20 +102,8 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .photo-card__photo-mobile {
-    display: none;
-  }
-
-  .photo-card__photo-tablet {
-    display: none;
-  }
-
-  .photo-card__photo-desktop {
-    display: block;
-  }
-
-  .photo-card__like {
+@media (min-width: 960px) {
+  .photos__item:first-child .photo-card__footer {
     margin-left: 620px;
   }
 }

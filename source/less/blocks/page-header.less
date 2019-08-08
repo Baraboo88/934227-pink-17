@@ -3,11 +3,12 @@
   width: auto;
   color: white;
   margin: 0;
+  position: relative;
 }
 
-.page-header__logo {
-  width: 75px;
-  height: 22px;
+.page-header__title-wrapper {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -80px;
+  background-size: cover;
 }
 
 .page-header__title {
@@ -16,7 +17,6 @@
   font-size: 24px;
   font-weight: 300;
   padding: 36px 45px 50px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -80px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -36,29 +36,14 @@
   border: none;
 }
 
-.page-header__logo--tablet-logo {
-  display: none;
-}
-
-.page-header__logo--desktop-logo {
-  display: none;
-}
-
 @media (min-width: 660px) {
   .page-header__top {
     width: 660px;
   }
 
-  .page-header__logo--tablet-logo {
-    display: block;
-  }
-
-  .page-header__logo--desktop-logo {
-    display: none;
-  }
-
-  .page-header__logo--mobile-logo {
-    display: none;
+  .page-header__title-wrapper {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -120px;
+    background-size: cover;
   }
 
   .page-header__title {
@@ -66,28 +51,29 @@
     font-size: 50px;
     font-weight: 300;
     padding: 80px 90px 75px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -120px;
     text-align: center;
     box-sizing: border-box;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .page-header__top {
-    width: 1200px;
-    padding: 22px 120px;
-  }
-
-  .page-header__logo--tablet-logo {
-    display: none;
-  }
-
-  .page-header__logo--mobile-logo {
-    display: none;
-  }
-
-  .page-header__logo--desktop-logo {
-    display: block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
   }
 
   .page-header__toggle {
@@ -98,12 +84,16 @@
     display: flex;
   }
 
+  .page-header__title-wrapper {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -120px;
+    background-size: cover;
+  }
+
   .page-header__title {
-    width: 1200px;
+    width: 960px;
     font-size: 50px;
     font-weight: 300;
     padding: 80px 220px 75px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -120px;
     text-align: center;
     box-sizing: border-box;
   }
