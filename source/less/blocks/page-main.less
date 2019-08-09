@@ -4,6 +4,22 @@
   color: #283645;
 }
 
+.page-main__title-wrapper {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -80px;
+  background-size: cover;
+}
+
+.page-main__title {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 36px 45px 50px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+}
+
 .page-main__content-header {
   padding: 60px 25px;
   font-size: 14px;
@@ -17,9 +33,32 @@
     padding: 100px 105px;
     line-height: 1.67;
   }
+
+  .page-main__title-wrapper {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -120px;
+    background-size: cover;
+  }
+
+  .page-main__title {
+    width: 660px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 80px 90px 75px;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .page-main__title {
+    width: 960px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 150px 220px 75px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
   .page-main__content-header {
     font-size: 18px;
     padding: 100px 310px;

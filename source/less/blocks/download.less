@@ -1,19 +1,23 @@
 .download {
+  padding-top: 398px;
   font-size: 18px;
   color: white;
-  background-color: #283645;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 110px, center -60px;
+  background-size: auto, 100%;
 }
 
 .download__wrapper {
-  width: 320px;
-  padding-top: 398px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: #283645;
+}
+
+.download__links-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .download__non-mobile-header {
@@ -87,17 +91,25 @@
   }
 
   .download {
+    padding: 0;
     background-image: url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center 110px, center -100px;
+    background-size: auto, auto;
   }
 
   .download__wrapper {
+    margin: 0 auto;
     width: 660px;
     padding: 100px 20px 110px 20px;
-
     box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .download__links-wrapper {
+    width: auto;
+    margin: 0;
   }
 
   .download__link {
