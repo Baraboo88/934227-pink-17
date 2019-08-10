@@ -5,12 +5,19 @@
   margin-bottom: 20px;
   background-color: #f2f2f2;
   color: #283645;
+  box-sizing: border-box;
 }
 
 .photo-card__photo-link {
   text-decoration: none;
   min-height: 137px;
   width: 280px;
+}
+
+.photo-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .photo-card__header {
@@ -22,16 +29,19 @@
 .photo-card__author {
   font-weight: bold;
   margin-right: 5px;
+  padding: 0;
 }
 
 .photo-card__how-long-ago {
   font-weight: 300;
   font-size: 12px;
+  padding: 0;
 }
 
 .photo-card__content {
   font-size: 14px;
   margin: 5px 13px 0;
+  flex-grow: 1;
 }
 
 .photo-card__footer {
@@ -40,4 +50,60 @@
   padding-left: 24px;
   color: #d22856;
   background: url("../img/icon-heart-red.svg") no-repeat 0 50%;
+}
+
+@media (min-width: 660px) {
+  .photo-card {
+    width: 300px;
+  }
+
+  .photos__item:first-child .photo-card__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .photos__item:first-child .photo-card__header {
+    padding-bottom: 0;
+    margin-top: 25px;
+  }
+
+  .photos__item:first-child .photo-card__content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    order: 1;
+    padding: 0;
+  }
+
+  .photos__item:first-child .photo-card__footer {
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0 40px 0 0;
+    box-sizing: border-box;
+  }
+
+  .photo-card__footer {
+    margin: 20px 15px;
+    font-size: 12px;
+    padding: 0 150px 0 0;
+    color: #d22856;
+    background: url("../img/icon-heart-red.svg") no-repeat 100% 50%;
+    box-sizing: border-box;
+  }
+
+  .photo-card__like {
+    font-size: 12px;
+    padding-right: 24px;
+    color: #d22856;
+    background: url("../img/icon-heart-red.svg") no-repeat 100% 50%;
+    margin-left: auto;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 960px) {
+  .photos__item:first-child .photo-card__footer {
+    margin-left: 620px;
+  }
 }
