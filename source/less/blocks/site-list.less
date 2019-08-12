@@ -20,6 +20,11 @@
   color: white;
   font-size: 18px;
   white-space: nowrap;
+  text-transform: uppercase;;
+}
+
+@media (min-width: 660px) {
+  padding: 30px 0;
 }
 
 @media (min-width: 960px) {
@@ -28,9 +33,13 @@
     align-items: center;
   }
 
-  .site-list__item {
+  .site-list__item:not(:first-child) {
     box-shadow: none;
     margin-left: 81px;
     background-color: transparent;
+  }
+
+  .site-list__item a {
+    text-transform: none;
   }
 }
