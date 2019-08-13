@@ -21,6 +21,7 @@
   font-size: 18px;
   white-space: nowrap;
   text-transform: uppercase;;
+  font-weight: bold;
 }
 
 @media (min-width: 660px) {
@@ -34,12 +35,16 @@
   }
 
   .site-list__item:not(:first-child) {
-    box-shadow: none;
-    margin-left: 81px;
+    margin-left: 80px;
+  }
+
+  .site-list__item {
     background-color: transparent;
+    box-shadow: none;
   }
 
   .site-list__item a {
     text-transform: none;
+    font-weight: normal;
   }
 }
