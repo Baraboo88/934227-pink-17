@@ -1,1 +1,215 @@
-/* to be populated */
+@import "../variables";
+
+.contacts {
+  color: black;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 42px;
+}
+
+.contacts__header {
+  margin: 0;
+  padding: 0 45px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.contacts__item:not(:first-child) {
+  margin-top: 25px;
+}
+
+.contacts__spec {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contacts__data {
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  color: #d22856;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contacts__map {
+  height: 200px;
+  background: url("../img/bg-map-mobile@1x.png")  no-repeat;
+  position: relative;
+  display: block;
+  background-position: center 103%;
+  background-size: 100% auto;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
+    background-size: 100% auto;
+    background-position: 0 103%;
+  }
+}
+
+.contacts__map::before {
+  left: 50%;
+  transform: translate(-50%,);
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 160px 0 160px;
+  border-color: white transparent transparent transparent;
+}
+
+.contacts__map::after {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: url("../img/icon-map-marker.svg");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 660px) {
+  .contacts__wrapper {
+    width: 660px;
+  }
+
+  .contacts__header {
+    font-size: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .contacts__item {
+    padding: 0;
+    margin: 0;
+    width: 210px;
+  }
+
+  .contacts__item:not(:first-child) {
+    margin-top: 0;
+  }
+  .contacts__item:nth-child(2) {
+    margin-left: 100px;
+  }
+
+  .contacts__item:last-child {
+    margin-top: 40px;
+    padding: 0;
+    width: 250px;
+  }
+
+  .contacts__map {
+    height: 373px;
+    background: url("../../img/bg-map-tablet@1x.jpg") no-repeat;
+    background-position: center 80%;
+    background-size: 100% auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 700px 848px;
+      background-position: center 80%;
+    }
+  }
+
+  .contacts__map::before {
+    border-width: 70px 330px 0 330px;
+  }
+
+  .contacts__map::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: url("../img/icon-map-marker.svg");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@media (min-width: 960px) {
+  .contacts__wrapper {
+    width: 960px;
+  }
+
+  .contacts__header {
+    font-size: 50px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .contacts__item {
+    padding: 0;
+    margin: 0;
+    width: 210px;
+  }
+
+  .contacts__item:not(:first-child) {
+    margin-top: 0;
+    margin-left: 95px;
+  }
+
+  .contacts__item:last-child {
+    padding: 0;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 1;
+  }
+
+  .contacts__map {
+    height: 505px;
+    background: url("../../img/bg-map-desktop@1x.jpg");
+    background-position: center 70%;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../img/bg-map-desktop@2x.jpg");
+      background-size: 100% auto;
+      background-position: center 80%;
+    }
+  }
+
+  .contacts__map::before {
+    border-width: 70px 330px 0 330px;
+  }
+
+  .contacts__map::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: url("../img/icon-map-marker.svg");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

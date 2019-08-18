@@ -1,0 +1,40 @@
+.slider__list {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__toggles {
+  display: flex;
+  align-items: center;
+}
+
+.slider__toggle {
+  display: block;
+  border: none;
+  padding: 0;
+  margin-left: 19px;
+  text-indent: -9999px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+
+.slider__toggle:first-child {
+  margin-left: 0;
+}
+
+.slider__toggle.slider__toggle--checked {
+  box-sizing: content-box;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border: solid 3px #283645;
+}
+
+@media (min-width: 960px) {
+  .slider__toggles {
+    display: none;
+  }
+}

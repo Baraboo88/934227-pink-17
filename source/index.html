@@ -15,11 +15,14 @@
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Пинк Лого">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+               alt="Пинк Лого">
         </picture>
       </a>
       <button class="page-header__toggle" type="button">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"
+             enable-background="new 0 0 23.867 23.867" xml:space="preserve">
       <path fill="#FFFFFF"
             d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
     </svg>
@@ -87,25 +90,30 @@
           <h3 class="features__effect-header"><span>Эффект </span><span>на 24 часа!</span></h3>
           <p class="features__effect-body"> Британские ученые провели исследования
             и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится
-              целые сутки!</p>
+            целые сутки!</p>
           <a class="features__effect-footer" href="#"> Узнать больше об исследовании </a>
         </div>
       </div>
     </div>
   </section>
-  <section class="feedbacks">
+  <section class="feedback">
     <h2 class="visually-hidden">Отзывы</h2>
-    <div class="feedbacks__wrapper slider">
-      <div class="feedbacks__list slider__list">
-        <blockquote class="feedbacks__item slider__item">
-          <h3 class="feedbacks__author">Николай Петров</h3>
-          <p class="feedbacks__text">«Это приложение перевернуло
+    <div class="feedback__wrapper slider">
+      <div class="feedback__list slider__list">
+        <blockquote class="feedback__item slider__item">
+          <div class="feedback__author-wrapper">
+            <h3 class="feedback__author">Николай Петров</h3>
+            <p class="feedback__author-description">25 лет, водитель трамвая </p>
+          </div>
+          <p class="feedback__text">«Это приложение перевернуло
             мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к
             выложенной фотографии!»</p>
         </blockquote>
-        <div class="feedbacks__toggle slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
+        <div class="feedback__arrow-button-left"></div>
+        <div class="feedback__arrow-button-right"></div>
+        <div class="feedback__toggle slider__toggles">
+          <button class="slider__toggle slider__toggle--checked" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </div>
@@ -115,9 +123,10 @@
   <section class="pricing">
     <h2 class="visually-hidden">Цены</h2>
     <div class="pricing__wrapper slider">
-      <div class=" slider__list">
+      <div class="slider__list">
         <table class="pricing__list">
           <tr>
+            <th class="pricing__non-mobile-header"></th>
             <th class="pricing__header">
               <p class="pricing__title">БАЗА</p>
               <p class="pricing__value">1.99 USD</p>
@@ -132,43 +141,48 @@
             </th>
           </tr>
           <tr>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--available">РОЗОВЫЙ ФИЛЬТР</span>
+            <td class="pricing__non-mobile-item pricing___features-item">
+              Розовый фильтр
             </td>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--available">РОЗОВЫЙ ФИЛЬТР</span>
+            <td class="pricing___features-item pricing__feature--available">
+              <span class="pricing__feature">РОЗОВЫЙ ФИЛЬТР</span>
             </td>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--available">РОЗОВЫЙ ФИЛЬТР</span>
+            <td class="pricing___features-item pricing__feature--available">
+              <span class="pricing__feature">РОЗОВЫЙ ФИЛЬТР</span>
             </td>
-          </tr>
-          <tr>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--disable">СМАЙЛИКИ</span>
-            </td>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--available">СМАЙЛИКИ</span>
-            </td>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--available">СМАЙЛИКИ</span>
+            <td class="pricing___features-item pricing__feature--available">
+              <span class="pricing__feature">РОЗОВЫЙ ФИЛЬТР</span>
             </td>
           </tr>
           <tr>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--disable">КОММЕНТАРИИ</span>
+            <td class="pricing__non-mobile-item pricing___features-item">Смайлики</td>
+            <td class="pricing___features-item pricing__feature--disable">
+              <span class="pricing__feature">СМАЙЛИКИ</span>
             </td>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--disable">КОММЕНТАРИИ</span>
+            <td class="pricing___features-item pricing__feature--available">
+              <span class="pricing__feature">СМАЙЛИКИ</span>
             </td>
-            <td class="pricing___features-item">
-              <span class="pricing__feature pricing__feature--available">КОММЕНТАРИИ</span>
+            <td class="pricing___features-item pricing__feature--available">
+              <span class="pricing__feature">СМАЙЛИКИ</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="pricing__non-mobile-item pricing___features-item">Комментарии</td>
+            <td class="pricing___features-item pricing__feature--disable">
+              <span class="pricing__feature">КОММЕНТАРИИ</span>
+            </td>
+            <td class="pricing___features-item pricing__feature--disable">
+              <span class="pricing__feature">КОММЕНТАРИИ</span>
+            </td>
+            <td class="pricing___features-item pricing__feature--available">
+              <span class="pricing__feature ">КОММЕНТАРИИ</span>
             </td>
           </tr>
         </table>
       </div>
       <div class="pricing__toggle slider__toggles">
         <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle slider__toggle--checked" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </div>
     </div>
@@ -176,32 +190,31 @@
   <section class="contacts">
     <div class="contacts__wrapper">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
         <h3 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h3>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__spec">Звоните:</p>
-            <a class="contacts__phone" href="tel:+78125556666">+7(812) 555-66-66</a>
+            <a class="contacts__data" href="tel:+78125556666">+7(812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             <p class="contacts__spec">Пишите:</p>
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <p class="contacts__spec">Приезжайте в гости:</p>
             <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
-        <div class="contacts__map">
-        </div>
-      </div>
     </div>
+    <a  href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9374105,30.3208909,17z/data=!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474"
+        class="contacts__map"></a>
   </section>
 </main>
 
-<footer class="page-footer">
+<footer class="page-footer page-footer--index">
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="#"><img class="page-footer__logo-img-non-desktop" src="img/logo-pink-blue-mobile.svg" alt="logo">
+    <a class="page-footer__logo" href="#"><img class="page-footer__logo-img-non-desktop"
+                                               src="img/logo-pink-blue-mobile.svg" alt="logo">
       <img class="page-footer__logo-img-desktop" src="img/logo-pink-blue-desktop.svg" alt="logo">
     </a>
     <ul class="social">

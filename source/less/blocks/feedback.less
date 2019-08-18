@@ -1,0 +1,111 @@
+.feedback {
+  color: black;
+  background: linear-gradient(175deg, white 75%, #f2f2f2 75%);
+}
+
+.feedback__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.feedback__item {
+  margin: 45px 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__author {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+}
+
+
+.feedback__toggle {
+  margin-left: 125px;
+  padding-bottom: 130px;
+}
+
+.feedback__author-description {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .feedback__wrapper {
+    width: 660px;
+  }
+
+  .feedback__text {
+    font-size: 18px;
+  }
+
+  .feedback__author-wrapper {
+    order: 1;
+  }
+
+  .feedback__author {
+    font-size: 20px;
+  }
+
+  .feedback__author-description {
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 0;
+  }
+
+  .feedback__toggle {
+    margin-left: 302px;
+    padding-bottom: 130px;
+  }
+}
+
+@media (min-width: 960px) {
+  .feedback__wrapper {
+    width: 960px;
+    padding-top: 120px;
+    background: url("../../img/icon-quotes-grey.svg") no-repeat;
+    background-size: 79px 63px;
+    background-position: center 72px;
+  }
+
+  .feedback__text {
+    font-size: 18px;
+  }
+
+  .feedback__item {
+    position: relative;
+    margin: 45px 0 190px;
+    padding: 0 105px;
+  }
+
+  .feedback__arrow-button-left {
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    background: url("../../img/icon-review-arrow-left-grey.svg");
+    top: 100px;
+  }
+
+  .feedback__arrow-button-right {
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    background: url("../../img/icon-review-arrow-right-grey.svg");
+    top: 100px;
+    right: 10px;
+  }
+
+  .feedback__toggle {
+    display: none;
+  }
+}
