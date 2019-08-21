@@ -14,11 +14,14 @@
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Пинк Лого">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+               alt="Пинк Лого">
         </picture>
       </a>
       <button class="page-header__toggle" type="button">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"
+             enable-background="new 0 0 23.867 23.867" xml:space="preserve">
       <path fill="#FFFFFF"
             d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
     </svg>
@@ -39,104 +42,116 @@
     <h1 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с
       Пинк</h1>
   </div>
-  <div class="form__wrapper">
+  <div class="page-main__header-wrapper">
     <h2 class="visually-hidden">Форма для заполнения</h2>
     <h3 class="page-main__content-header page-main__content-header--form">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
       заполните форму ниже
     </h3>
-    <form class="form">
-      <ul class="form__name">
-        <li class="form__name-item ">
-          <label class="form__name-label" for="surname">ФАМИЛИЯ:</label>
-          <input class="form__field" required type="text" id="surname" placeholder="Укажите фамилию*">
-        </li>
-        <li class="form__name-item ">
-          <label class="form__name-label" for="name">ИМЯ:</label>
-          <input class="form__field" required type="text" id="name" placeholder="Введите ваше имя*">
-        </li>
-        <li class="form__name-item ">
-          <label class="form__name-label" for="patronymic">ОТЧЕСТВО:</label>
-          <input class="form__field" type="text" id="patronymic" placeholder="Ну и отчество тоже">
-        </li>
-      </ul>
-      <ul class="form__achievements">
-        <li class="form__achievements-item">
-          <input type="checkbox" id="checkbox-1">
-          <label class="form__checkbox-label" for="checkbox-1">Сделал селфи
-            с акулой</label>
-        </li>
-        <li class="form__achievements-item">
-          <input type="checkbox" id="checkbox-2">
-          <label class="form__checkbox-label" for="checkbox-2">Обгорел на
-            пляже</label>
-        </li>
-        <li class="form__achievements-item">
-          <input type="checkbox" id="checkbox-3">
-          <label class="form__checkbox-label" for="checkbox-3">Видел
-            Чака Норриса</label>
-        </li>
-        <li class="form__achievements-item">
-          <input type="checkbox" id="checkbox-4">
-          <label class="form__checkbox-label" for="checkbox-4">Накупил
-            сувениров</label>
-        </li>
-        <li class="form__achievements-item">
-          <input type="checkbox" id="checkbox-5">
-          <label class="form__checkbox-label" for="checkbox-5">Удержал
-            башню</label>
-        </li>
-        <li class="form__achievements-item">
-          <input type="checkbox" id="checkbox-6">
-          <label class="form__checkbox-label" for="checkbox-6">Разгромил
-            отель</label>
-        </li>
-      </ul>
-      <ul class="form__contacts">
-        <li class="form__contacts-item ">
-          <label class="form__contacts-label" for="phone">НОМЕР
-            ТЕЛЕФОНА</label>
-          <input class="form__contacts-field" type="text" id="phone" placeholder="Номер, пожалуйста">
-        </li>
-        <li class="form__contacts-item">
-          <label class="form__contacts-label" for="email">АДРЕС
-            ПОЧТЫ</label>
-          <input class="form__contacts-field" required type="text" id="email" placeholder="Введите почту*">
-        </li>
-      </ul>
-      <ul class="form__app-radio">
-        <li class="form__app-radio-item">
-          <input type="radio" id="ios" name="form-radio">
-          <label class="form__radio-label" for="ios">Pink для iOS</label>
-        </li>
-        <li class="form__app-radio-item">
-          <input type="radio" id="android" name="form-radio">
-          <label class="form__radio-label" for="android">Pink на Android</label>
-        </li>
-        <li class="form__app-radio-item">
-          <input type="radio" id="win" name="form-radio">
-          <label class="form__radio-label" for="win">Windows Phone</label>
-        </li>
-      </ul>
-      <div class="form__footer">
-        <div class="form__comments">
-          <label for="comments" class="form__comments-label ">
-            ОПИШИТЕ СВОИ ЭМОЦИИ
-          </label>
-          <textarea id="comments" rows="6"
-                    placeholder="Можно прямо в красках, не стесняясь в выражениях">
-
-          </textarea>
-        </div>
-        <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ФОРМУ"/>
-        <p class="form__footnote">*-ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
-      </div>
-    </form>
   </div>
+  <form class="form">
+    <ul class="form__name">
+      <li class="form__name-item ">
+        <label class="form__name-label" for="surname">ФАМИЛИЯ:</label>
+        <input class="form__field" required type="text" id="surname" placeholder="Укажите фамилию*">
+      </li>
+      <li class="form__name-item ">
+        <label class="form__name-label" for="name">ИМЯ:</label>
+        <input class="form__field" required type="text" id="name" placeholder="Введите ваше имя*">
+      </li>
+      <li class="form__name-item ">
+        <label class="form__name-label" for="patronymic">ОТЧЕСТВО:</label>
+        <input class="form__field" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+      </li>
+    </ul>
+    <div class="form__achievements__wrapper">
+      <fieldset class="form__fieldset form__achievements-fieldset">
+        <legend class="form__achievements-header">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
+        <ul class="form__achievements">
+          <li class="form__achievements-item">
+            <input type="checkbox" id="checkbox-1" class="checkbox-input" checked>
+            <label class="form__checkbox-label" for="checkbox-1">Сделал селфи
+              с акулой</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" id="checkbox-2" class="checkbox-input" checked>
+            <label class="form__checkbox-label" for="checkbox-2">Обгорел на
+              пляже</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" id="checkbox-3" class="checkbox-input">
+            <label class="form__checkbox-label" for="checkbox-3">Видел
+              Чака Норриса</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" id="checkbox-4" class="checkbox-input">
+            <label class="form__checkbox-label" for="checkbox-4">Накупил
+              сувениров</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" id="checkbox-5" class="checkbox-input" checked>
+            <label class="form__checkbox-label" for="checkbox-5">Удержал
+              башню</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" id="checkbox-6" class="checkbox-input">
+            <label class="form__checkbox-label" for="checkbox-6">Разгромил
+              отель</label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+    <div class="form__contacts">
+      <fieldset class="form__fieldset form__contacts-header-fieldset">
+        <legend class="form__contacts-header">Контактная информация</legend>
+        <ul class="form__contacts-list">
+          <li class="form__contacts-item ">
+            <label class="form__contacts-label" for="phone">НОМЕР
+              ТЕЛЕФОНА</label>
+            <input class="form__contacts-field" type="text" id="phone" placeholder="Номер, пожалуйста">
+          </li>
+          <li class="form__contacts-item">
+            <label class="form__contacts-label" for="email">АДРЕС
+              ПОЧТЫ</label>
+            <input class="form__contacts-field" required type="text" id="email" placeholder="Введите почту*">
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+    <div class="form__app-radio-wrapper">
+      <fieldset class="form__fieldset form__app-radio-fieldset">
+        <legend class="form__app-radio-header">С каким приложением путешествовали?</legend>
+        <ul class="form__app-radio">
+          <li class="form__app-radio-item">
+            <input type="radio" id="ios" name="form-radio" class="radio-input" checked>
+            <label class="form__radio-label" for="ios">Pink для iOS</label>
+          </li>
+          <li class="form__app-radio-item">
+            <input type="radio" id="android" name="form-radio" class="radio-input">
+            <label class="form__radio-label" for="android">Pink на Android</label>
+          </li>
+          <li class="form__app-radio-item">
+            <input type="radio" id="win" name="form-radio" class="radio-input">
+            <label class="form__radio-label" for="win">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+    <div class="form__footer">
+      <fieldset class="form__fieldset form__footer-fieldset">
+        <legend class="form__comments-label">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+        <textarea class="form__footer-comments" id="comments" rows="6"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ФОРМУ"/>
+      <p class="form__footnote"><span>*</span> — обязательные поля</p>
+    </div>
+  </form>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="#"><img class="page-footer__logo-img-non-desktop" src="img/logo-pink-blue-mobile.svg" alt="logo">
+    <a class="page-footer__logo" href="#"><img class="page-footer__logo-img-non-desktop"
+                                               src="img/logo-pink-blue-mobile.svg" alt="logo">
       <img class="page-footer__logo-img-desktop" src="img/logo-pink-blue-desktop.svg" alt="logo">
     </a>
     <ul class="social">

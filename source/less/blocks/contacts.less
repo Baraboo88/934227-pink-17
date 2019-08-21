@@ -163,7 +163,7 @@
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 0;
   }
@@ -191,6 +191,7 @@
     height: 505px;
     background: url("../../img/bg-map-desktop@1x.jpg");
     background-position: center 70%;
+    background-size: 100% auto;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../../img/bg-map-desktop@2x.jpg");
       background-size: 100% auto;
@@ -199,7 +200,7 @@
   }
 
   .contacts__map::before {
-    border-width: 70px 330px 0 330px;
+    border-width: 100px 600px 0 600px;
   }
 
   .contacts__map::after {
