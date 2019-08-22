@@ -65,7 +65,7 @@
 @media (min-width: 660px) {
   .features {
     background: linear-gradient(to top, white 32%, transparent 32%),
-      linear-gradient(176deg, white 26.5%, #f2f2f2 26.5%);
+      linear-gradient(176deg, white 26%, #f2f2f2 26%);
   }
 
   .features__wrapper {
@@ -73,7 +73,7 @@
   }
 
   .features__content-item:not(:first-child) {
-    padding-top: 34px;
+    padding-top: 35px;
     box-sizing: border-box;
   }
 
@@ -101,7 +101,7 @@
 
   .features__content {
     text-align: left;
-    padding: 84px 10px 43px 331px;
+    padding: 84px 10px 47px 330px;
     background: url("../img/iphone-screen-3-tablet@1x.png") 5% 13px no-repeat;
     box-sizing: border-box;
   }
@@ -112,7 +112,8 @@
 
   .features__description {
     text-align: left;
-    margin-top: 12px;
+    margin-top: 11px;
+    line-height: 1.75;
   }
 
   .features__effect {
@@ -127,7 +128,7 @@
   .features__effect-timer-wrapper {
     width: 276px;
     height: 276px;
-    margin: 59px 0 0 0;
+    margin: 55px 0 0 2px;
     background: url("../img/icon-timer-gray.svg") no-repeat 50% 50%;
     background-size: contain;
     position: relative;
@@ -141,7 +142,7 @@
     font-size: 96px;
     color: #d22856;
     font-weight: bold;
-    border: #d22856 solid 15px;
+    border: #d22856 solid 14px;
     border-radius: 50%;
     padding-top: 15px;
     text-align: center;
@@ -158,7 +159,7 @@
 
   .features__effect-header {
     font-size: 30px;
-    margin: 95px 0 0;
+    margin: 90px 0 0;
     text-align: left;
     padding-left: 0;
     box-sizing: border-box;
@@ -178,7 +179,7 @@
     font-size: 14px;
     padding-right: 30px;
     box-sizing: border-box;
-    line-height: 1.71;
+    line-height: 1.75;
   }
 
   .features__effect-body .features__effect-body-tablet-span {
@@ -187,7 +188,7 @@
 
   .features__effect-footer {
     display: block;
-    margin-top: 13px;
+    margin-top: 12px;
     color: #d22856;
     font-size: 14px;
   }
@@ -195,7 +196,7 @@
 
 @media (min-width: 960px) {
   .features {
-    background: linear-gradient(175deg, white 31%, #f2f2f2 31%);
+    background: linear-gradient(176deg, white 28.5%, #f2f2f2 28.5%);
   }
 
   .features__wrapper {
@@ -203,7 +204,7 @@
   }
 
   .features__header {
-    padding-top: 68px;
+    padding-top: 65px;
   }
 
   .features__header-item {
@@ -216,7 +217,7 @@
 
   .features__content {
     text-align: left;
-    padding: 38px 10px 40px;
+    padding: 38px 10px 35px;
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
@@ -246,24 +247,37 @@
   .features__content-item,
   .features__content-item:not(:first-child) {
     width: 300px;
-    padding-top: 355px;
+    padding-top: 357px;
     box-sizing: border-box;
   }
 
   .features__content-item:first-child {
     background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat top center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px 302px;
+    }
   }
 
   .features__content-item:last-child {
     background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat top center;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px 302px;
+    }
   }
 
   .features__content-item:nth-child(2) {
     background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat top center;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px 302px;
+    }
   }
 
   .features__effect {
-    padding: 0 23px 50px 0;
+    padding: 0 23px 63px 0;
   }
 
   .features__effect-timer-wrapper {
@@ -283,7 +297,7 @@
     font-size: 120px;
     color: #d22856;
     font-weight: bold;
-    border: #d22856 solid 20px;
+    border: #d22856 solid 17px;
     border-radius: 50%;
     padding-top: 18px;
     text-align: center;
@@ -291,7 +305,7 @@
     margin: 0;
     margin-left: 50%;
     transform: translateX(-50%);
-    top: 65px;
+    top: 68px;
   }
 
   .features__effect-header {

@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .page-footer__logo {
@@ -21,7 +21,8 @@
   font-size: 14px;
   margin: 40px 0;
   padding: 3px 45px 12px 0;
-  background: url("../img/logo-htmlacademy-red.svg") no-repeat right top;
+  background: url("../img/logo-htmlacademy-red.svg") no-repeat;
+  background-position: 102px 10px;
   text-align: left;
   box-sizing: border-box;
 }
@@ -40,15 +41,22 @@
   }
 
   .page-footer__wrapper {
+    padding: 0 20px;
     width: 660px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer__copyright {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 92px;
   }
 
   .page-footer__logo {
     margin: 0;
+    padding-bottom: 10px;
   }
 }
 
