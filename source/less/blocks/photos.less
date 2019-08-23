@@ -26,6 +26,33 @@
   margin: 0 auto;
 }
 
+.photos__panorama-photo {
+  margin: 0;
+}
+
+.photos__photo-link--panorama {
+  height: 137px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+}
+
+.photos__photo-link--panorama::before {
+  content: "ПАНОРАМА ДНЯ";
+  position: absolute;
+  text-transform: uppercase;
+  color: white;
+  background: #d22856;
+  box-sizing: border-box;
+  padding: 9px 19px 10px 20px;
+  font-size: 12px;
+  right: 20px;
+  font-weight: bold;
+}
+
+
 @media (min-width: 660px) {
   .photos__wrapper {
     width: 660px;
@@ -35,9 +62,34 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
     width: 620px;
     margin: 0 auto;
+  }
+
+  .photos__item:not(:first-child):nth-child(2n+1) {
+    margin-left: 20px;
+  }
+
+  .photos__panorama-photo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 509px;
+  }
+
+  .photos__photo-link--panorama::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    background: #d22856;
+    box-sizing: border-box;
+    padding: 9px 19px 10px 20px;
+    font-size: 12px;
+    right: 20px;
+    font-weight: bold;
+    z-index: 1;
   }
 
   .photos__item.photos__item--panorama-of-the-day {
@@ -51,7 +103,6 @@
   }
 
   .photos__item:not(:first-child) {
-
     padding-bottom: 15px;
   }
 }
@@ -61,15 +112,36 @@
     width: 960px;
   }
 
+  .photos__panorama-photo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 506px;
+  }
+
   .photos__item.photos__item--panorama-of-the-day {
     width: 940px;
     padding-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .photos__item:not(:first-child):nth-child(3n+2) {
+    margin-left: 10px;
   }
 
   .photos__list {
     margin: 0 auto;
-    width: 940px;
-    justify-content: space-between;
+    width: 960px;
+  }
+
+  .photos__item:not(:first-child) {
+    margin-left: 20px;
+    margin-bottom: 54px;
+  }
+
+  .photos__item:first-child {
+    margin-left: 10px;
   }
 
   .photos__item--panorama-of-the-day .photo-card__photo-link {

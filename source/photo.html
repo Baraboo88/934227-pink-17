@@ -45,14 +45,13 @@
     <div class="photos__wrapper">
       <h2 class="page-main__content-header">Взгляните на фотографии, которые выкладывают
         пользователи! Видите, как не хватает ваших?</h2>
-      <a href="#" class="photo-card__photo-link photo-card__photo-link--panorama">
+      <a href="#" class="photos__photo-link--panorama">
         <picture>
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="photo-card__photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-               alt="Фото">
+          <img class="photos__panorama-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+               width="320" height="137" alt="Фото">
         </picture>
-
       </a>
       <ul class="photos__list">
         <li class="photos__item photo-card photos__item--panorama-of-the-day">
@@ -192,7 +191,7 @@
             </p>
           </div>
         </li>
-        < class="photos__item photo-card">
+        <li class="photos__item photo-card">
           <a href="#" class="photo-card__photo-link">
             <picture>
               <source media="(min-width: 960px)"
@@ -221,7 +220,7 @@
   </section>
   <section class="add-photo">
     <h2 class="add-photo__header">
-      Затмите всех!
+      Затмите их всех!
       Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в телефоне!
     </h2>
     <div class="add-photo__wrapper">
@@ -238,7 +237,7 @@
           <ul class="add-photo__effects-list">
             <li class="add-photo__effect-item">
               <button class="add-photo__effect-button add-photo__effect-button--1" type="button"></button>
-              <div class="add-photo__slidecontainer add-photo__slidecontainer--active add-photo__slidecontainer--1">
+              <div class="add-photo__slidecontainer add-photo__slidecontainer--1 add-photo__slidecontainer--active">
                 <div class="add-photo__range-toggle"></div>
                 <div class="add-photo__range-line"></div>
               </div>
@@ -260,7 +259,7 @@
           </ul>
           <div class="add-photo__buttons">
             <input class="add-photo__button" type="submit" value="Запостить"/>
-            <input class="add-photo__button add-photo__button--inactive" type="reset" value="Отменить"/>
+            <input class="add-photo__button add-photo__button--inactive" type="reset" value="Отмена"/>
           </div>
         </div>
       </form>
@@ -270,9 +269,12 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="#"><img class="page-footer__logo-img-non-desktop"
-                                               src="img/logo-pink-blue-mobile.svg" alt="logo">
-      <img class="page-footer__logo-img-desktop" src="img/logo-pink-blue-desktop.svg" alt="logo">
+    <a class="page-footer__logo" href="#">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
+             alt="Пинк Лого">
+      </picture>
     </a>
     <ul class="social">
       <li class="social__item">

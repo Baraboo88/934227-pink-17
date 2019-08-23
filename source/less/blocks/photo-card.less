@@ -22,32 +22,12 @@
   height: 180px;
 }
 
-.photo-card__photo-link--panorama .photo-card__photo {
+.photos__photo-link--panorama .photo-card__photo {
   margin: 0;
   width: 320px;
   height: 180px;
 }
 
-.photo-card__photo-link--panorama {
-  height: 137px;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.photo-card__photo-link--panorama::before {
-  content: "ПАНОРАМА ДНЯ";
-  position: absolute;
-  text-transform: uppercase;
-  color: white;
-  background: #d22856;
-  box-sizing: border-box;
-  padding: 9px 19px 10px 20px;
-  font-size: 12px;
-  right: 20px;
-  font-weight: bold;
-}
 
 .photo-card__wrapper {
   display: flex;
@@ -78,13 +58,13 @@
   padding: 0;
   font-size: 14px;
   margin: 4px 0 13px;
-  line-height: 1.71;
+  line-height: 1.73;
   flex-grow: 1;
   text-align: left;
 }
 
 .photo-card__footer {
-  margin: 0 0 24.5px;
+  margin: 0 0 23px;
   margin-left: 2px;
   font-size: 12px;
   padding: 0 0 0 30px;
@@ -97,11 +77,11 @@
     height: 300px;
   }
 
-  .photo-card__photo-link--panorama {
+  .photos__photo-link--panorama {
     height: 509px;
   }
 
-  .photo-card__photo-link--panorama::before {
+  .photos__photo-link--panorama::before {
     right: 20px;
     top: 58px;
   }
@@ -116,12 +96,6 @@
     height: 300px;
   }
 
-  .photo-card__photo-link--panorama .photo-card__photo {
-    margin: 0;
-    width: 660px;
-    height: 509px;
-  }
-
   .photo-card__wrapper {
     padding-left: 27px;
     padding-right: 10px;
@@ -133,7 +107,7 @@
   }
 
   .photos__item:first-child {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .photos__item:first-child .photo-card__wrapper {
@@ -153,7 +127,7 @@
   }
 
   .photos__item:first-child .photo-card__content {
-    margin-top: 5px;
+    margin-top: 4px;
     margin-bottom: 25px;
     order: 1;
     padding: 0;
@@ -177,6 +151,7 @@
     margin-bottom: 0;
     padding: 0 31px 0 0;
     box-sizing: border-box;
+    background: url("../img/icon-heart-red.svg") no-repeat 108px 50%;
   }
 }
 
@@ -189,7 +164,7 @@
     height: 400px;
   }
 
-  .photo-card__photo-link--panorama {
+  .photos__photo-link--panorama {
     height: 506px;
   }
 
@@ -198,18 +173,17 @@
     height: 400px;
   }
 
-  .photo-card__photo-link--panorama .photo-card__photo {
-    width: 100%;
-    height: 506px;
-  }
-
-  .photo-card__photo-link--panorama::before {
+  .photos__photo-link--panorama::before {
     right: 10px;
     top: 54px;
   }
 
   .photos__item {
     margin-bottom: 50px;
+  }
+
+  .photos__item:first-child {
+    margin-bottom: 49.5px;
   }
 
   .photos__item:first-child .photo-card__content {
