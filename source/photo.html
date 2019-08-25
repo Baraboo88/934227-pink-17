@@ -10,7 +10,7 @@
 <header class="page-header">
   <div class="page-header__wrapper">
     <div class="page-header__top">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -18,19 +18,13 @@
                alt="Пинк Лого">
         </picture>
       </a>
-      <button class="page-header__toggle--opened" type="button">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-             x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"
-             enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-      <path fill="#FFFFFF"
-            d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-    </svg>
+      <button class="page-header__toggle page-header__toggle--closed  page-header__toggle--nojs" type="button">
       </button>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
+    <nav class="main-nav main-nav--closed">
+      <ul class="main-nav__list  site-list">
         <li class="site-list__item"><a href="index.html">Главная</a></li>
-        <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+        <li class="site-list__item site-list__item--checked"><a href="photo.html">Фотографии</a></li>
         <li class="site-list__item"><a href="form.html">Конкурс</a></li>
         <li class="site-list__item"><a href="#">HTML Academy</a></li>
       </ul>
@@ -45,7 +39,7 @@
     <div class="photos__wrapper">
       <h2 class="page-main__content-header">Взгляните на фотографии, которые выкладывают
         пользователи! Видите, как не хватает ваших?</h2>
-      <a href="#" class="photos__photo-link--panorama">
+      <a href="#" class="photos__photo-link-panorama">
         <picture>
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -265,7 +259,6 @@
       </form>
     </div>
   </section>
-  </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
@@ -278,19 +271,21 @@
     </a>
     <ul class="social">
       <li class="social__item">
-        <a class="social__button social__button--twitter"></a>
+        <a class="social__button social__button--twitter" href="#"></a>
       </li>
       <li class="social__item">
-        <a class="social__button social__button--facebook"></a>
+        <a class="social__button social__button--facebook" href="#"></a>
       </li>
       <li class="social__item">
-        <a class="social__button social__button--play"></a>
+        <a class="social__button social__button--play" href="#"></a>
       </li>
     </ul>
-    <p class="page-footer__copyright">
-      Разработано
-    </p>
+    <a class="page-footer__copyright" href="https://up.htmlacademy.ru/adaptive/17/project/pink#pink-3-9">
+        Разработано
+    </a>
   </div>
 </footer>
+<script src="js/picturefill.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>

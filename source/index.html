@@ -19,18 +19,11 @@
                alt="Пинк Лого">
         </picture>
       </a>
-      <button class="page-header__toggle--opened" type="button">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-             x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"
-             enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-      <path fill="#FFFFFF"
-            d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-    </svg>
-      </button>
+      <button class="page-header__toggle page-header__toggle--closed  page-header__toggle--nojs" type="button"></button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a>Главная</a></li>
+        <li class="site-list__item site-list__item--checked"><a>Главная</a></li>
         <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
         <li class="site-list__item"><a href="form.html">Конкурс</a></li>
         <li class="site-list__item"><a href="#">HTML Academy</a></li>
@@ -144,37 +137,37 @@
             <td class="pricing__non-mobile-item pricing___features-item">
               Розовый фильтр
             </td>
-            <td class="pricing___features-item pricing__feature--available">
+            <td class="pricing___features-item pricing___features-item--available">
               <span class="pricing__feature">РОЗОВЫЙ ФИЛЬТР</span>
             </td>
-            <td class="pricing___features-item pricing__feature--available">
+            <td class="pricing___features-item pricing___features-item--available">
               <span class="pricing__feature">РОЗОВЫЙ ФИЛЬТР</span>
             </td>
-            <td class="pricing___features-item pricing__feature--available">
+            <td class="pricing___features-item pricing___features-item--available">
               <span class="pricing__feature">РОЗОВЫЙ ФИЛЬТР</span>
             </td>
           </tr>
           <tr>
             <td class="pricing__non-mobile-item pricing___features-item">Смайлики</td>
-            <td class="pricing___features-item pricing__feature--disable">
+            <td class="pricing___features-item pricing___features-item--disable">
               <span class="pricing__feature">СМАЙЛИКИ</span>
             </td>
-            <td class="pricing___features-item pricing__feature--available">
+            <td class="pricing___features-item pricing___features-item--available">
               <span class="pricing__feature">СМАЙЛИКИ</span>
             </td>
-            <td class="pricing___features-item pricing__feature--available">
+            <td class="pricing___features-item pricing___features-item--available">
               <span class="pricing__feature">СМАЙЛИКИ</span>
             </td>
           </tr>
           <tr>
             <td class="pricing__non-mobile-item pricing___features-item">Комментарии</td>
-            <td class="pricing___features-item pricing__feature--disable">
+            <td class="pricing___features-item pricing___features-item--disable">
               <span class="pricing__feature">КОММЕНТАРИИ</span>
             </td>
-            <td class="pricing___features-item pricing__feature--disable">
+            <td class="pricing___features-item pricing___features-item--disable">
               <span class="pricing__feature">КОММЕНТАРИИ</span>
             </td>
-            <td class="pricing___features-item pricing__feature--available">
+            <td class="pricing___features-item pricing___features-item--available">
               <span class="pricing__feature ">КОММЕНТАРИИ</span>
             </td>
           </tr>
@@ -233,11 +226,12 @@
         <a class="social__button social__button--play" href="https://www.youtube.com/"></a>
       </li>
     </ul>
-    <p class="page-footer__copyright">
+    <a class="page-footer__copyright" href="https://up.htmlacademy.ru/adaptive/17/project/pink#pink-3-9">
       Разработано
-    </p>
+    </a>
   </div>
 </footer>
-
+<script src="js/picturefill.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>

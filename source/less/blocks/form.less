@@ -15,6 +15,10 @@
 }
 
 .form__name-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
 }
@@ -75,6 +79,10 @@
 }
 
 .form__checkbox-label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center;
   position: relative;
@@ -102,6 +110,7 @@
   background: url("../../img/icon-yes-red.svg");
   background-size: contain;
   left: 10px;
+  top: 12px;
 }
 
 .checkbox-input:checked ~ .form__checkbox-label::after {
@@ -201,6 +210,10 @@
 }
 
 .form__radio-label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center;
   position: relative;
@@ -228,6 +241,7 @@
   background: #d22856;
   border-radius: 50%;
   left: 13px;
+  top: 12px;
 }
 
 .radio-input:checked ~ .form__radio-label::after {
@@ -300,7 +314,7 @@
   color: #d22856;
 }
 
-.form__footnote .form__footnote--desktop {
+.form__footnote .form__footnote-desktop {
   display: none;
 }
 
@@ -316,6 +330,10 @@
   }
 
   .form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: column;
     padding-bottom: 60px;
@@ -327,6 +345,10 @@
   }
 
   .form__name-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -404,6 +426,10 @@
   }
 
   .form__contacts-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
@@ -480,6 +506,10 @@
     order: 3;
     width: 660px;
     margin-top: 57px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -530,6 +560,10 @@
 @media (min-width: 960px) {
   .form {
     width: 960px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -552,6 +586,10 @@
 
   .form__contacts-list {
     padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: flex-start;
     margin: -18px 0 20px 60px;
@@ -634,6 +672,10 @@
   .form__achievements {
     padding: 0;
     margin: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -679,16 +721,19 @@
     order: 3;
     width: 936px;
     margin-top: 55px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0;
     padding-bottom: 0;
-
   }
 
-  .form__footnote .form__footnote--desktop {
+  .form__footnote .form__footnote-desktop {
     display: inline;
     color: black;
   }
