@@ -14,10 +14,25 @@
   box-sizing: border-box;
 }
 
-.page-header__toggle {
+.page-header__toggle--open {
   padding: 0;
-  background-color: transparent;
+  background: url("../../img/icon-menu-cross.svg") transparent;
+  width: 24px;
+  height: 23px;
   border: none;
+}
+
+.page-header__toggle--closed {
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 24px;
+  background: url("../../img/icon-menu-burger.svg") transparent;
+}
+
+
+.page-header__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: 660px) {
@@ -31,7 +46,7 @@
     height: 40px;
   }
 
-  .page-header__toggle {
+  .page-header__toggle--open {
     padding: 12px 0 0 12px;
   }
 }
@@ -63,7 +78,7 @@
     align-items: center;
   }
 
-  .page-header__toggle {
+  .page-header__toggle--open {
     display: none;
   }
 
