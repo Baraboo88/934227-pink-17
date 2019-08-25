@@ -3,8 +3,9 @@
   list-style: none;
   width: 320px;
   margin: 0 auto;
-  padding: 0 22px 44px;
+  padding: 0 20px 42px;
   box-sizing: border-box;
+  margin-top: -12px;
 }
 
 .form__fieldset {
@@ -20,23 +21,24 @@
 }
 
 .form__name-item:not(:last-child) {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .form__name-label {
   font-size: 14px;
   color: #d22856;
-  margin-left: 21px;
+  margin-left: 22px;
 }
 
 .form__field {
   border: solid 2px #e5e5e5;
-  width: 276px;
+  width: 280px;
   font-size: 18px;
   color: #283645;
-  padding: 22px 70px 18px 20px;
+  padding: 16px 20px 18px 19px;
   box-sizing: border-box;
-  margin-top: 16px;
+  margin-top: 12px;
+  font-family: inherit;
 }
 
 .form__achievements__wrapper {
@@ -60,23 +62,26 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 40px;
+  top: 36px;
 }
 
 .form__achievements {
   margin: 0;
-  padding: 115px 0 44px;
+  padding: 112px 0 43px;
   list-style: none;
 }
 
 .form__achievements-item:not(:last-child) {
-  margin-bottom: 47px;
+  margin-bottom: 43px;
 }
 
 .form__checkbox-label {
   display: flex;
   align-items: center;
   position: relative;
+  font-family: inherit;
+  font-size: 18px;
+  margin-left: 20px;
 }
 
 .form__checkbox-label::before {
@@ -115,7 +120,7 @@
 .form__contacts {
   width: 320px;
   margin: 0 auto;
-  padding: 41px 22px 44px;
+  padding: 35px 20px 42px;
   box-sizing: border-box;
 }
 
@@ -139,23 +144,24 @@
 }
 
 .form__contacts-item:last-child {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .form__contacts-label {
   font-size: 14px;
   color: #d22856;
-  margin-left: 21px;
+  margin-left: 22px;
 }
 
 .form__contacts-field {
   border: solid 2px #e5e5e5;
-  width: 276px;
+  width: 280px;
   font-size: 18px;
   color: #283645;
-  padding: 22px 70px 18px 20px;
+  padding: 17px 70px 18px 20px;
   box-sizing: border-box;
-  margin-top: 16px;
+  margin-top: 10px;
+  font-family: inherit;
 }
 
 
@@ -182,23 +188,25 @@
   color: #d22856;
   font-weight: normal;
   margin-bottom: 40px;
-  margin-top: 41px;
+  margin-top: 36px;
 }
 
 .form__app-radio {
   margin: 0;
-  padding: 110px 22px 44px;
+  padding: 108px 20px 42px;
   list-style: none;
 }
 
 .form__app-radio-item:not(:first-child) {
-  margin-top: 39px;
+  margin-top: 35px;
 }
 
 .form__radio-label {
   display: flex;
   align-items: center;
   position: relative;
+  font-family: inherit;
+  font-size: 18px;
 }
 
 .form__radio-label::before {
@@ -238,7 +246,7 @@
 .form__footer {
   width: 320px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -246,15 +254,15 @@
   display: block;
   font-size: 14px;
   color: #d22856;
-  padding: 41px 45px 15px 45px;
+  padding: 37px 45px 16px 47px;
 }
 
 .form__footer-comments {
   border: solid 2px #e5e5e5;
   resize: none;
-  width: 276px;
-  height: 197px;
-  padding: 23px 15px 23px 15px;
+  width: 280px;
+  height: 200px;
+  padding: 15px 15px 23px 19px;
   box-sizing: border-box;
 }
 
@@ -265,24 +273,28 @@
 }
 
 .form__submit-button {
-  margin-top: 52px;
+  margin-top: 45px;
   border: none;
   outline: none;
-  width: 276px;
+  width: 280px;
   background: #2aab6d;
   color: white;
   font-size: 18px;
   text-align: center;
   box-sizing: border-box;
-  padding: 21px 0 21px;
+  padding: 18px 0 21px;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 3px;
 }
 
 .form__footnote {
   padding: 0;
-  margin-top: 43px;
+  margin-top: 38px;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 21px;
 }
 
 .form__footnote span {
@@ -308,6 +320,7 @@
 
   .form__name {
     width: 660px;
+    margin-bottom: 15px;
   }
 
   .form__name-item {
@@ -316,16 +329,25 @@
     align-items: center;
   }
 
+  .form__name-label {
+    margin-left: 0;
+  }
+
   .form__field {
     width: 100%;
     margin-top: 0;
-    margin-left: 22px;
+    margin-left: 19px;
+  }
+
+  .form__name-item:not(:first-child) {
+    margin-top: 53px;
   }
 
   .form__contacts {
     width: 660px;
     order: 1;
     box-sizing: border-box;
+    margin-top: 20px;
   }
 
   .form__achievements__wrapper {
@@ -335,19 +357,30 @@
     margin: 0 auto;
     padding: 0 22px;
     box-sizing: border-box;
+    margin-top: 16px;
   }
 
   .form__achievements-fieldset {
     width: 616px;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 37px;
     position: relative;
+    padding-bottom: 5px;
+  }
+
+  .form__checkbox-label::before {
+    margin-right: 20px;
   }
 
   .form__contacts-header-fieldset {
+    padding-top: 0;
     padding-bottom: 30px;
     padding-right: 120px;
     width: auto;
+  }
+
+  .form__contacts-list {
+    margin-top: 0;
   }
 
   .form__achievements-header {
@@ -359,11 +392,12 @@
   }
 
   .form__achievements {
-    padding-top: 55px;
+    padding-top: 42px;
   }
 
   .form__contacts-header {
     display: block;
+    margin-bottom: 27px;
   }
 
   .form__contacts-item {
@@ -375,32 +409,38 @@
   .form__contacts-item:first-child::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 64px;
     background: url("../../img/icon-phone-red.svg") #e5e5e5 no-repeat;
     background-position: center center;
-    top: 16px;
+    top: 10px;
     right: -60px;
   }
 
   .form__contacts-item:last-child::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 64px;
     background: url("../../img/icon-mail-red.svg") #e5e5e5 no-repeat;
     background-position: center center;
-    top: 16px;
+    top: 10px;
     right: -60px;
+  }
+
+  .form__contacts-item:last-child {
+    margin-top: 25px;
   }
 
   .form__contacts-field {
     width: 436px;
     padding-top: 18px;
+    padding-left: 15px;
   }
 
   .form__contacts-label {
-    margin-top: 19px;
+    margin-top: 15px;
+    margin-left: 18px;
   }
 
   .form__app-radio-wrapper {
@@ -420,13 +460,23 @@
   }
 
   .form__app-radio {
-    padding-top: 48px;
+    padding-top: 45px;
+  }
+
+
+  .form__app-radio-fieldset {
+    padding-bottom: 11px;
+    padding-left: 35px;
+  }
+
+  .form__radio-label::before {
+    margin-right: 20px;
   }
 
   .form__footer {
     order: 3;
     width: 660px;
-    margin-top: 60px;
+    margin-top: 57px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -434,30 +484,33 @@
   }
 
   .form__comments-label {
-    padding: 0;
+    padding: 0 32px;
     text-align: center;
-   }
+    margin-left: 0;
+  }
 
   .form__footer-comments {
-    width: 496px;
-    padding-right: 10px;
+    width: 500px;
+    height: 192px;
+    padding: 15px 15px 23px 16px;
     font-weight: normal;
   }
 
   .form__footer-fieldset {
-    padding: 47px 60px 53px 60px;
+    padding: 37px 55px 47px 60px;
+    box-sizing: border-box;
+    margin-bottom: 20.5px;
   }
 
   .form__footer-comments::placeholder {
     font-size: 18px;
   }
 
-
   .form__submit-button {
-    width: 296px;
+    width: 300px;
     color: white;
     font-size: 18px;
-    padding: 21px 0 21px;
+    padding: 21px 0 20px;
     box-sizing: border-box;
   }
 
@@ -466,6 +519,7 @@
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 0;
+    padding-top: 10px;
   }
 
 }

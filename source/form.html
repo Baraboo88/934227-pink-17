@@ -45,19 +45,19 @@
   <div class="page-main__header-wrapper">
     <h2 class="visually-hidden">Форма для заполнения</h2>
     <h3 class="page-main__content-header page-main__content-header--form">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
-      заполните форму ниже
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
     </h3>
+    <p class="page-main__content-header-advise">Пожалуйста, заполните форму ниже</p>
   </div>
   <form class="form">
     <ul class="form__name">
       <li class="form__name-item ">
         <label class="form__name-label" for="surname">ФАМИЛИЯ:</label>
-        <input class="form__field" required type="text" id="surname" placeholder="Укажите фамилию*">
+        <input class="form__field" required type="text" id="surname" placeholder="Укажите фамилию *">
       </li>
       <li class="form__name-item ">
         <label class="form__name-label" for="name">ИМЯ:</label>
-        <input class="form__field" required type="text" id="name" placeholder="Введите ваше имя*">
+        <input class="form__field" required type="text" id="name" placeholder="Введите ваше имя *">
       </li>
       <li class="form__name-item ">
         <label class="form__name-label" for="patronymic">ОТЧЕСТВО:</label>
@@ -113,7 +113,7 @@
           <li class="form__contacts-item">
             <label class="form__contacts-label" for="email">АДРЕС
               ПОЧТЫ</label>
-            <input class="form__contacts-field" required type="text" id="email" placeholder="Введите почту*">
+            <input class="form__contacts-field" required type="text" id="email" placeholder="Введите почту *">
           </li>
         </ul>
       </fieldset>
@@ -148,11 +148,14 @@
     </div>
   </form>
 </main>
-<footer class="page-footer">
+<footer class="page-footer page-footer--form">
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="#"><img class="page-footer__logo-img-non-desktop"
-                                               src="img/logo-pink-blue-mobile.svg" alt="logo">
-      <img class="page-footer__logo-img-desktop" src="img/logo-pink-blue-desktop.svg" alt="logo">
+    <a class="page-footer__logo" href="#">
+      <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+      <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
+           alt="Пинк Лого">
+    </picture>
     </a>
     <ul class="social">
       <li class="social__item">
