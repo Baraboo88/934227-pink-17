@@ -11,8 +11,16 @@
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"),
       url("../img/bg-back-mobile@2x.jpg");
-    background-size: 258px 286px, 100% 462px ;
+    background-size: 258px 286px, 100% 462px;
     background-position: 0 110px, center -65px;
+  }
+}
+
+.download.download--transparent {
+  padding-top: 462px;
+  background-position: 0 175px, center 0;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-position: 0 175px, center 0;
   }
 }
 
@@ -43,6 +51,16 @@
   color: inherit;
   text-align: center;
   font-weight: bold;
+}
+
+.download__link:hover {
+  background-color: white;
+  color: #d22856;
+}
+
+.download__link:active {
+  background-color: white;
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .download__list {
@@ -113,12 +131,25 @@
     }
   }
 
+  .download.download--transparent {
+    padding: 0;
+    background-position: center 183px, center 0;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-position: 0 183px, center 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   .download__wrapper {
     margin: 0 auto;
     width: 660px;
     padding: 92px 20px 111px 20px;
     box-sizing: border-box;
     background-color: transparent;
+  }
+
+  .download__wrapper.download--transparent {
+    padding: 202px 20px 111px 20px;
   }
 
   .download__links-wrapper {
@@ -157,6 +188,10 @@
     }
   }
 
+  .download__wrapper.download--transparent {
+    padding: 220px 20px 123px 10px;
+  }
+
   .download__wrapper {
     width: 100%;
     max-width: 960px;
@@ -170,6 +205,20 @@
       background-size: 1050px 645px;
     }
   }
+
+  .download.download--transparent {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+
+
 
   .download__non-mobile-header {
     font-size: 50px;

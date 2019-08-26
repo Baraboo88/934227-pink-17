@@ -25,23 +25,24 @@
   font-weight: bold;
 }
 
-.site-list__item--checked {
-  border-bottom: solid 2px white;
-}
-
 .site-list__item a:hover {
   color: #d22856;
 }
 
-.site-list__item a:active {
-  color: rgba(255,255,255, 0.3);
-}
 
 @media (min-width: 660px) {
   padding: 30px 0;
 }
 
 @media (min-width: 960px) {
+  .site-list__item--checked {
+    border-bottom: solid 2px white;
+  }
+
+  .site-list__item a:active {
+    color: rgba(255,255,255, 0.3);
+  }
+
   .site-list {
     flex-direction: row;
     align-items: center;
