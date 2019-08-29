@@ -62,16 +62,10 @@
 .contacts__map {
   margin: 37px 0 0;
   height: 200px;
-  background: url("../img/bg-map-mobile@1x.png")  no-repeat;
   position: relative;
   display: block;
   background-position: center 100%;
   background-size: 100% auto;
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
-    background-size: 100% auto;
-    background-position: 0 100%;
-  }
 }
 
 .contacts__map::before {
@@ -84,20 +78,9 @@
   height: 0;
   border-style: solid;
   border-width: 30px 160px 0 160px;
-  border-color: white transparent transparent transparent;
+  border-color: #ffffff transparent transparent transparent;
+  z-index: 1;
 }
-
-.contacts__map::after {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  background: url("../img/icon-map-marker.svg");
-  bottom: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 
 @media (min-width: 660px) {
   .contacts__wrapper {
@@ -145,33 +128,13 @@
   .contacts__map {
     margin: 2px 0 0;
     height: 373px;
-    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
-    background-position: center 73%;
-    background-size: auto, auto;
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-map-tablet@2x.jpg");
-      background-size: 700px, 100%;
-      background-position: center 73%;
-    }
   }
 
   .contacts__map::before {
-    top:-1px;
+    top: -1px;
     border-width: 70px 330px 0 330px;
   }
-
-  .contacts__map::after {
-    position: absolute;
-    content: "";
-    width: 36px;
-    height: 36px;
-    background: url("../img/icon-map-marker.svg");
-    bottom: 145px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
-
 
 @media (min-width: 960px) {
   .contacts__wrapper {
@@ -222,30 +185,11 @@
   }
 
   .contacts__map {
-    margin: -5px;
     height: 500px;
-    background: url("../img/bg-map-desktop@1x.jpg") no-repeat;
-    background-position: center 58%;
-    background-size: auto auto;
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-map-desktop@2x.jpg");
-      background-size: 1200px 976px;
-      background-position: center 58%;
-    }
   }
 
   .contacts__map::before {
     border-width: 107px 600px 0 600px;
   }
 
-  .contacts__map::after {
-    position: absolute;
-    content: "";
-    width: 36px;
-    height: 36px;
-    background: url("../img/icon-map-marker.svg");
-    bottom: 200px;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
 }
