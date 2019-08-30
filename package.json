@@ -8,6 +8,7 @@
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-less": "4.0.x",
+    "gulp-csso": "^3.0.1",
     "gulp-plumber": "1.2.x",
     "gulp-sourcemaps": "2.6.x",
     "gulp-postcss": "8.0.x",
@@ -37,5 +38,8 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "gulp-csso": "^3.0.1"
   }
 }
