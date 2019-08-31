@@ -49,6 +49,9 @@
   display: block;
 }
 
+.add-photo__range-toggle:active {
+  background-color: #d22856;
+}
 
 .add-photo__range-line {
   width: 240px;
@@ -103,21 +106,36 @@
 .add-photo__effect-button--1 {
   width: 44px;
   height: 44px;
+  background: url("../img/icon-editor-crop.svg");
+  opacity: 0.3;
+}
+
+.add-photo__effect-button--active {
   background: url("../img/icon-editor-crop-red.svg");
+  opacity: 1;
 }
 
 .add-photo__effect-button--2 {
   width: 48px;
   height: 43px;
-  background: url("../img/icon-editor-fill-grey.svg");
+  background: url("../img/icon-editor-fill.svg");
+  opacity: 0.3;
+}
+
+.add-photo__effect-button--2:hover {
+  opacity: 0.5;
 }
 
 .add-photo__effect-button--3 {
   width: 32px;
   height: 32px;
-  background: url("../img/icon-editor-contrast-grey.svg");
+  background: url("../img/icon-editor-contrast.svg");
+  opacity: 0.3;
 }
 
+.add-photo__effect-button--3:hover {
+  opacity: 0.5;
+}
 
 .add-photo__buttons {
   display: flex;
@@ -142,13 +160,34 @@
   font-family: inherit;
 }
 
+.add-photo__button:hover {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.add-photo__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .add-photo__button:last-child {
   margin-top: 12px;
 }
 
 .add-photo__button.add-photo__button--inactive {
-  border: solid 3px #dddfe0;
-  color: #dddfe0;
+  border: solid 3px #283645;
+  color: #283645;
+  opacity: 0.1;
+}
+
+.add-photo__button.add-photo__button--inactive:hover {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.add-photo__button.add-photo__button--inactive:active {
+  background-color: #283645;
+  color: rgba(255, 255, 255, 0.3);;
+  opacity: 0.3;
 }
 
 @media (min-width: 660px) {
@@ -186,6 +225,7 @@
     height: 22px;
     background: url("../img/icon-editor-fill-red.svg");
     background-size: contain;
+    opacity: 1;
   }
 
   .add-photo__effect-button--3 {
@@ -193,6 +233,7 @@
     height: 16px;
     background: url("../img/icon-editor-contrast-red.svg");
     background-size: contain;
+    opacity: 1;
   }
 
   .add-photo__effect-item {
@@ -203,6 +244,7 @@
     justify-content: space-between;
     padding-right: 18px;
   }
+
   .add-photo__effect-item:nth-child(1) {
     border-bottom: solid 1px #dddfe0;
     padding-bottom: 23px;
@@ -322,6 +364,7 @@
     width: 410px;
     padding-right: 30px;
   }
+
   .add-photo__effect-item:nth-child(1) {
     padding-bottom: 13px;
   }

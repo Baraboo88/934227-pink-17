@@ -99,8 +99,9 @@
 
   .feedback__item {
     position: relative;
-    margin: 45px 0 184px;
-    padding: 0 105px;
+    padding: 45px 105px 184px;
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 
   .feedback__arrow-button-left {
@@ -112,6 +113,15 @@
     left: 10px;
   }
 
+  .feedback__arrow-button-left:hover {
+    background: url("../img/icon-review-arrow-left.svg");
+  }
+
+  .feedback__arrow-button-left:active {
+    background: url("../img/icon-review-arrow-left.svg");
+    opacity: 0.1;
+  }
+
   .feedback__arrow-button-right {
     position: absolute;
     width: 22px;
@@ -119,6 +129,15 @@
     background: url("../img/icon-review-arrow-right-grey.svg");
     top: 125px;
     right: 10px;
+  }
+
+  .feedback__arrow-button-right:hover {
+    background: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .feedback__arrow-button-right:active {
+    background: url("../img/icon-review-arrow-right.svg");
+    opacity: 0.1;
   }
 
   .feedback__author {
