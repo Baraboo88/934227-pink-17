@@ -70,5 +70,3 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series("clean", "copy","css"));
 gulp.task("start", gulp.series("build", "server"));
-
-
