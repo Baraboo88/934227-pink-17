@@ -2,21 +2,19 @@
   padding-top: 396px;
   font-size: 18px;
   color: #ffffff;
-  background-image: url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
+  background-image:  url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 110px, center -65px;
-  background-size: auto, 100%;
+  background-position: center -65px;
+  background-size: 100%;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/iphone-hand-mobile@2x.png"),
-      url("../img/bg-back-mobile@2x.jpg");
-    background-size: 258px 286px, 100% 462px;
-    background-position: 0 110px, center -65px;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% 462px;
+    background-position: center -65px;
   }
 }
 
-.download.download--transparent {
+.download.download__wrapper--transparent {
   padding-top: 462px;
   background-position: 0 175px, center 0;
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -33,6 +31,23 @@
 .download__links-wrapper {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+}
+
+.download__links-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 258px;
+  height: 286px;
+  top: -285px;
+  left: 40%;
+  transform: translateX(-50%);
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/iphone-hand-mobile@2x.png") no-repeat center;
+    background-size: 258px 286px;
+  }
 }
 
 .download__non-mobile-header {
@@ -148,7 +163,11 @@
     background-color: transparent;
   }
 
-  .download__wrapper.download--transparent {
+  .download__links-wrapper::before {
+    display: none;
+  }
+
+  .download__wrapper.download__wrapper--transparent {
     padding: 202px 20px 111px 20px;
   }
 
@@ -188,7 +207,7 @@
     }
   }
 
-  .download__wrapper.download--transparent {
+  .download__wrapper.download__wrapper--transparent {
     padding: 220px 20px 123px 10px;
   }
 
@@ -216,9 +235,6 @@
       background-size: cover;
     }
   }
-
-
-
 
   .download__non-mobile-header {
     font-size: 50px;

@@ -4,40 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк - Фото</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="page-header page-header--transparent">
+<header class="page-header">
   <div class="page-header__wrapper">
     <div class="page-header__top">
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-img" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
 
-        <style>
-
-        .page-header__logo-desktop {
-          display: none;
-        }
-
-        .page-header__logo-tablet {
-          display: none;
-        }
-
-        @media (min-width: 660px) {
-          .page-header__logo-tablet {
-            display: inline-block;
-          }
-        }
-
-        @media (min-width: 960px) {
-          .page-header__logo-desktop {
-            display: inline-block;
-          }
-          .page-header__logo-tablet {
-            display: none;
-          }
-        }
-      </style>
 
           <g>
     <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
@@ -77,10 +52,10 @@
   </g>
 </svg>
       </a>
-      <button class="page-header__toggle page-header__toggle--closed  page-header__toggle--nojs" type="button">
+      <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
       </button>
     </div>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav__toggle--nojs">
       <ul class="main-nav__list  site-list">
         <li class="site-list__item"><a href="index.html">Главная</a></li>
         <li class="site-list__item site-list__item--checked"><a href="photo.html">Фотографии</a></li>
@@ -91,24 +66,24 @@
   </div>
 </header>
 <main class="page-main">
-  <div class="page-main__title-wrapper page-main--transparent">
+  <div class="page-main__title-wrapper">
     <h1 class="page-main__title">Фотографии пользователей</h1>
   </div>
   <section class="photos">
     <div class="photos__wrapper">
       <h2 class="page-main__content-header">Взгляните на фотографии, которые выкладывают
         пользователи! Видите, как не хватает ваших?</h2>
-      <a href="#" class="photos__photo-link-panorama">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="photos__panorama-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-               width="320" height="137" alt="Фото">
-        </picture>
-      </a>
       <ul class="photos__list">
-        <li class="photos__item photo-card photos__item--panorama-of-the-day">
-          <div class="photo-card__wrapper">
+        <li class="photos__item photo-card photo-card--panorama-of-the-day">
+          <a href="#" class="photos__photo-link-panorama">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photos__panorama-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+                   width="320" height="137" alt="Фото">
+            </picture>
+          </a>
+          <div class="photo-card__wrapper photo-card__wrapper--panorama-of-the-day">
             <div class="photo-card__header">
               <span class="photo-card__author">Анна</span>
               <span class="photo-card__how-long-ago">(5 МИНУТ НАЗАД)</span>
@@ -164,7 +139,7 @@
               <span class="photo-card__how-long-ago">(12 ЧАСОВ НАЗАД)</span>
             </div>
             <p class="photo-card__content">
-              Соседы будут рады!
+              Соседи будут рады!
             </p>
             <p class="photo-card__footer">
               НРАВИТСЯ: 666
@@ -291,21 +266,21 @@
             <li class="add-photo__effect-item">
               <button class="add-photo__effect-button add-photo__effect-button--1 add-photo__effect-button--active" type="button"></button>
               <div class="add-photo__slidecontainer add-photo__slidecontainer--1 add-photo__slidecontainer--active">
-                <div class="add-photo__range-toggle"></div>
+                <button class="add-photo__range-toggle"></button>
                 <div class="add-photo__range-line"></div>
               </div>
             </li>
             <li class="add-photo__effect-item">
               <button class="add-photo__effect-button add-photo__effect-button--2" type="button"></button>
               <div class="add-photo__slidecontainer add-photo__slidecontainer--2">
-                <div class="add-photo__range-toggle"></div>
+                <button class="add-photo__range-toggle"></button>
                 <div class="add-photo__range-line"></div>
               </div>
             </li>
             <li class="add-photo__effect-item">
               <button class="add-photo__effect-button add-photo__effect-button--3" type="button"></button>
               <div class="add-photo__slidecontainer add-photo__slidecontainer--3">
-                <div class="add-photo__range-toggle"></div>
+                <button class="add-photo__range-toggle"></button>
                 <div class="add-photo__range-line"></div>
               </div>
             </li>
@@ -322,7 +297,7 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <a class="page-footer__logo" href="#">
-      <svg class="page-footer__logo-img" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+      <svg class="page-footer__logo-img" version="1.1" id="Layer_2-footer" xmlns="http://www.w3.org/2000/svg"
            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
            viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
 
@@ -369,7 +344,7 @@
           <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.964c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.716,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5 s0.053-1.011,0.135-1.5c0.147-0.878,0.427-1.711,0.808-2.483c-1.034-0.078-1.852-0.932-1.852-1.985 c0-0.189-0.077-0.357-0.192-0.489c-0.938,1.469-1.569,3.15-1.795,4.958h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.628,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.025,0.478,0.063c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.29-0.065,0.564-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.53h1.814c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59 c0.012,0,0.023-0.004,0.036-0.004C59.931,29.842,60.728,29.125,60.462,28.016z"></path>
 
         </g>
-        <g class="page-header__logo-desktop">
+        <g class="page-footer__logo-desktop">
   <g>
     <g>
       <path fill="#D22856"
