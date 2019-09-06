@@ -15,18 +15,18 @@
 
 .page-header__top {
   display: flex;
-  justify-content: flex-end;
-  padding: 22px 20px 23.5px;
+  padding: 0 20px 23.5px;
   width: 320px;
   margin: auto;
   box-sizing: border-box;
   align-items: center;
   position: relative;
+  justify-content: space-between;
 }
 
 .page-header__logo {
-  position: absolute;
-  left: -50px;
+  position: relative;
+  left: -70px;
   top: 3px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .page-header__toggle--open {
-  padding: 0;
+  margin: 20px 0 0;
   background: url("../img/icon-menu-cross.svg") transparent;
   width: 24px;
   height: 23px;
@@ -56,6 +56,7 @@
 }
 
 .page-header__toggle--closed {
+  margin: 20px 0 0;
   border: none;
   padding: 0;
   width: 50px;
@@ -73,6 +74,14 @@
 }
 
 .page-header__toggle--nojs {
+  display: none;
+}
+
+.page-header__logo-img .page-header__logo-desktop {
+  display: none;
+}
+
+.page-header__logo-img .page-header__logo-tablet {
   display: none;
 }
 
@@ -95,6 +104,10 @@
   .page-header__toggle--open {
     padding: 0 0 0 12px;
     margin-top: 15px;
+  }
+
+  .page-header__logo-img .page-header__logo-tablet {
+    display: block;
   }
 }
 
@@ -121,7 +134,6 @@
     align-items: center;
   }
 
-
   .page-header__toggle {
     display: none;
   }
@@ -134,8 +146,11 @@
     display: none;
   }
 
-  .page-main__title-wrapper {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -120px;
-    background-size: cover;
+  .page-header__logo-img .page-header__logo-desktop {
+    display: inline-block;
+  }
+
+  .page-header__logo-img .page-header__logo-tablet {
+    display: none;
   }
 }

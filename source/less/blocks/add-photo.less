@@ -25,6 +25,11 @@
   margin-right: 20px;
 }
 
+.add-photo__effect-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .add-photo__effects-list {
   padding-left: 55px;
   margin-top: 37px;
@@ -60,6 +65,7 @@
 }
 
 .add-photo__range-toggle {
+  outline: none;
   position: absolute;
   width: 14px;
   height: 15px;
@@ -94,7 +100,6 @@
 .add-photo__effect-item:nth-child(3) {
   margin-left: 40px;
 }
-
 
 .add-photo__effect-button {
   border: none;
@@ -186,7 +191,7 @@
 
 .add-photo__button.add-photo__button--inactive:active {
   background-color: #283645;
-  color: rgba(255, 255, 255, 0.3);;
+  color: rgba(255, 255, 255, 0.3);
   opacity: 0.3;
 }
 
@@ -317,13 +322,7 @@
   .add-photo__button:last-child {
     margin-top: 23px;
   }
-
-  .add-photo__button.add-photo__button--inactive {
-    border: solid 3px #dddfe0;
-    color: #dddfe0;
-  }
 }
-
 
 @media (min-width: 960px) {
   .add-photo__header {
@@ -420,5 +419,4 @@
     margin: 0;
     margin-left: 44px;
   }
-
 }

@@ -1,0 +1,81 @@
+.modals__item--not-ok {
+  display: none;
+}
+
+.modals__item--ok {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .modals__item {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  }
+
+  .modals__header {
+    margin: 0;
+    color: #283645;
+    font-size: 30px;
+    padding: 30px 100px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .modals__body {
+    margin: 20px 0 30px;
+    color: #283645;
+    font-size: 18px;
+    padding: 0 70px;
+    text-align: center;
+  }
+
+  .modals__button {
+    background-color: #2aab6d;
+    box-sizing: border-box;
+    width: 296px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    margin: 0 80px 52px;
+    padding: 20px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .modals__button-wrapper {
+    background-color: rgba(0, 1, 1, 0.15);
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modals__item {
+    width: 760px;
+  }
+
+  .modals__header {
+    padding-top: 40px;
+  }
+
+  .modals__body {
+    padding: 0 180px;
+    margin: 20px 0 50px;
+  }
+
+  .modals__button-wrapper-not-ok-button {
+    background-color: rgba(0, 1, 1, 0.15);
+    padding-top: 47px;
+  }
+
+  .modals__button {
+    margin: 0 240px 52px;
+    padding: 20px 0;
+  }
+}

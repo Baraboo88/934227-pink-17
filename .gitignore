@@ -9,4 +9,8 @@
 node_modules/
 build/
 npm-debug.*
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6220925d977c54ea1e08b99803404ec244e7a764
 Thumbs.db
