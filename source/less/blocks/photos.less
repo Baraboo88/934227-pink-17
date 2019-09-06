@@ -12,47 +12,29 @@
   box-sizing: border-box;
 }
 
-.photos__item--panorama-of-the-day {
-  width: 320px;
-  align-items: center;
-}
-
-.photos__item--panorama-of-the-day .photo-card__photo-link {
-  width: 320px;
-}
-
 .photos__wrapper {
   width: 320px;
   margin: 0 auto;
 }
 
 .photos__panorama-photo {
-  margin: 0;
+  display: block;
+  width: 100%;
+  height: 137px;
 }
 
 .photos__photo-link-panorama {
-  height: 137px;
   padding: 0;
   margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 500px;
   position: relative;
   box-sizing: border-box;
   display: block;
-  margin-top: -3px;
+  overflow: hidden;
 }
-
-.photos__photo-link-panorama::before {
-  content: "ПАНОРАМА ДНЯ";
-  position: absolute;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #d22856;
-  box-sizing: border-box;
-  padding: 9px 19px 10px 20px;
-  font-size: 12px;
-  right: 20px;
-  font-weight: bold;
-}
-
 
 @media (min-width: 660px) {
   .photos__wrapper {
@@ -63,69 +45,56 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    width: 620px;
+    width: 100%;
     margin: 0 auto;
   }
 
-  .photos__item:not(:first-child):nth-child(2n+1) {
+  .photos__item:not(:first-child) {
     margin-left: 20px;
+    padding-bottom: 15px;
   }
 
   .photos__panorama-photo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
     height: 509px;
   }
 
   .photos__photo-link-panorama {
+    background-color: #2aab6d;
+    height: 509px;
+    max-width: 800px;
     margin-top: 0;
   }
 
-  .photos__photo-link-panorama::before {
-    content: "ПАНОРАМА ДНЯ";
-    position: absolute;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #d22856;
-    box-sizing: border-box;
-    padding: 9px 19px 10px 20px;
-    font-size: 12px;
-    right: 20px;
-    font-weight: bold;
-    z-index: 1;
-  }
-
-  .photos__item.photos__item--panorama-of-the-day {
+  .photos__item.photo-card__wrapper--panorama-of-the-day {
     width: 620px;
     align-self: center;
     align-items: center;
   }
 
-  .photos__item--panorama-of-the-day .photo-card__photo-link {
-    width: 660px;
-  }
-
-  .photos__item:not(:first-child) {
-    padding-bottom: 15px;
+  .photos__item:first-child {
+    margin-bottom: 48px;
   }
 }
 
 @media (min-width: 960px) {
+  .photos__item:first-child .photo-card__footer {
+    margin-left: auto;
+  }
+
   .photos__wrapper {
     width: 960px;
   }
 
   .photos__panorama-photo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
     height: 506px;
   }
 
-  .photos__item.photos__item--panorama-of-the-day {
+  .photos__photo-link-panorama {
+    height: 506px;
+    max-width: 1400px;
+  }
+
+  .photos__item.photo-card__wrapper--panorama-of-the-day {
     width: 940px;
     padding-bottom: 15px;
     box-sizing: border-box;
@@ -145,11 +114,25 @@
     margin-bottom: 54px;
   }
 
-  .photos__item:first-child {
-    margin-left: 10px;
+
+  .photos__photo-link-panorama::before {
+    right: 10px;
+    top: 54px;
   }
 
-  .photos__item--panorama-of-the-day .photo-card__photo-link {
-    width: auto;
+  .photos__item:first-child .photo-card__wrapper {
+    width: 940px;
+  }
+
+  .photos__item {
+    margin-bottom: 50px;
+  }
+
+  .photos__item:first-child {
+    margin-bottom: 49.5px;
+  }
+
+  .photos__item:first-child .photo-card__content {
+    margin-bottom: 8px;
   }
 }

@@ -11,7 +11,6 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imageMin = require("gulp-imagemin");
 var del = require("del");
-var posthtml = require("gulp-posthtml")
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -58,14 +57,14 @@ gulp.task("clean", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("build"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
