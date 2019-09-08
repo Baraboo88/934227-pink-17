@@ -1,16 +1,57 @@
 .page-header {
-  background-color: #283645;
   width: auto;
   color: #ffffff;
   margin: 0;
+  background-color: #283645;
 }
 
-.page-header.page-header--transparent {
-  position: absolute;
+
+.page-header--transparent {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   margin: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 0;
+  background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% 462px;
+    background-position: center 0;
+  }
+}
+
+.page-header--transparent .page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__title-wrapper {
+  padding-top: 32px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -70px  #283645;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+
+.page-header--transparent .page-header__title-wrapper {
+  background: none;
+}
+
+
+.page-header__title {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 45px 83px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #ffffff;
+  line-height: 1.2;
 }
 
 .page-header__top {
@@ -22,6 +63,10 @@
   align-items: center;
   position: relative;
   justify-content: space-between;
+}
+
+.page-header--transparent .page-header__top {
+  background: none;
 }
 
 .page-header__logo {
@@ -86,10 +131,50 @@
 }
 
 @media (min-width: 660px) {
+  .page-header--transparent {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: auto, auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 729px;
+    }
+  }
+
   .page-header__top {
     justify-content: space-between;
     width: 660px;
     padding: 29px 20px 36px;
+  }
+
+  .page-header__title-wrapper {
+    padding-top: 30px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -110px #283645;
+    background-size: 1200px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .page-header--transparent .page-header__title-wrapper {
+    background: none;
+  }
+
+  .page-header__title {
+    width: 660px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 40px 90px 141px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .page-header__title--form {
+    padding: 40px 90px 81px;
   }
 
   .page-header__logo {
@@ -112,10 +197,29 @@
 }
 
 @media (min-width: 960px) {
+  .page-header--transparent {
+    background: none;
+  }
+
+  .page-header--transparent .page-header__wrapper {
+    background: none;
+  }
+
+
+  .page-header__wrapper-of-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: auto, auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .page-header__wrapper {
@@ -126,6 +230,25 @@
     width: 960px;
     box-sizing: border-box;
   }
+
+  .page-header__title-wrapper {
+    padding: 0;
+    background: none;
+  }
+
+  .page-header__title {
+    width: 960px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 65px 220px 102px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .page-header__title--form {
+    padding: 80px 100px 101px;
+  }
+
 
   .page-header__top {
     width: auto;
