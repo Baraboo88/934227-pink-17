@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-bottom: 21.5px;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
   color: #283645;
   box-sizing: border-box;
@@ -167,15 +167,23 @@
   }
 
   .photo-card__wrapper--panorama-of-the-day .photo-card__footer {
-    max-width: 100%;
     order: 2;
     margin-left: auto;
     margin-top: 28px;
-    margin-right: 20px;
     margin-bottom: 0;
-    padding: 0 31px 0 0;
     box-sizing: border-box;
-    background: url("../img/icon-heart-red.svg") no-repeat 108px 50%;
+    background: none;
+    padding: 0;
+    margin-right: 19px;
+  }
+
+  .photo-card__wrapper--panorama-of-the-day .photo-card__footer::after {
+    content: "";
+    display: inline-block;
+    background: url("../img/icon-heart-red.svg") no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-left: 15px;
   }
 }
 
@@ -200,7 +208,7 @@
     box-sizing: border-box;
     padding-bottom: 16px;
     margin-left: 10px;
-}
+  }
 
   .photo-card__photo {
     height: 400px;

@@ -16,7 +16,7 @@
 .add-photo__form {
   width: 320px;
   margin: 0 auto;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 42px 0;
   box-sizing: border-box;
 }
 
@@ -58,6 +58,10 @@
   background-color: #d22856;
 }
 
+.add-photo__range-toggle:focus {
+  outline: solid 2px deepskyblue;
+}
+
 .add-photo__range-line {
   width: 240px;
   height: 2px;
@@ -68,7 +72,7 @@
   outline: none;
   position: absolute;
   width: 15px;
-  height: 15px;
+  height: 16px;
   border: solid 2px #d22856;
   background-color: #f2f2f2;
   border-radius: 50%;
@@ -106,6 +110,10 @@
   outline: none;
   background: none;
   display: block;
+}
+
+.add-photo__effect-button:focus {
+  outline: solid 2px deepskyblue;
 }
 
 .add-photo__effect-button--1 {
@@ -156,13 +164,14 @@
   font-size: 18px;
   font-weight: bold;
   width: 280px;
-  height: 55px;
+  padding: 15px 0 16px;
   box-sizing: border-box;
   border: solid 3px #d22856;
   border-radius: 30px;
   color: #d22856;
   line-height: 1;
   font-family: inherit;
+  white-space: normal;
 }
 
 .add-photo__button:hover {
@@ -195,10 +204,14 @@
   opacity: 0.3;
 }
 
+.add-photo__button:focus {
+  outline: solid 2px deepskyblue;
+}
+
 @media (min-width: 660px) {
   .add-photo__header {
     width: 660px;
-    padding: 46px 100px 70px;
+    padding: 46px 100px 68px;
     font-size: 18px;
     line-height: 1.67;
   }
@@ -213,7 +226,7 @@
     align-items: flex-start;
     flex-direction: column;
     padding-bottom: 27px;
-    margin-left: 28px;
+    margin-left: 27px;
     padding-left: 0;
     margin-top: 8px;
   }
@@ -315,18 +328,18 @@
 
   .add-photo__button {
     width: 260px;
-    padding-right: 11px;
-    padding-bottom: 6px;
+    text-align: center;
+    padding-right: 5px;
   }
 
   .add-photo__button:last-child {
-    margin-top: 23px;
+    margin-top: 25px;
   }
 }
 
 @media (min-width: 960px) {
   .add-photo__header {
-    padding: 6px 100px 66px;
+    padding: 4px 100px 66px;
   }
 
   .add-photo__wrapper {
@@ -418,7 +431,7 @@
   .add-photo__button {
     width: 183px;
     padding-right: 0;
-    padding-bottom: 5px;
+    padding-left: 5px;
   }
 
   .add-photo__button:last-child {

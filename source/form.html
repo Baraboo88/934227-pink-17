@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк - Форма</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
   <body>
     <!-- add class for interactive menu - "page-header--transparent" -->
@@ -14,6 +17,7 @@
           <div class="page-header__top">
             <a class="page-header__logo" href="index.html">
               <svg class="page-header__logo-img" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146px" height="40px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+                <title>Logo</title>
                 <g>
                   <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                   <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -122,8 +126,7 @@
               </li>
               <li class="form__achievements-item">
                 <input type="checkbox" id="checkbox-6" class="form__checkbox-input" tabindex="-1">
-                <label class="form__checkbox-label" for="checkbox-6" tabindex="0">Разгромил
-                  отель</label>
+                <label class="form__checkbox-label" for="checkbox-6" tabindex="0">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
@@ -133,12 +136,12 @@
             <legend class="form__contacts-header">Контактная информация</legend>
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
-                <label class="form__contacts-label" for="phone">НОМЕР
+                <label class="form__contacts-label form__contacts-label--phone" for="phone">НОМЕР
                   ТЕЛЕФОНА</label>
                 <input class="form__contacts-field" type="tel" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" id="phone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__contacts-item">
-                <label class="form__contacts-label" for="email">АДРЕС
+                <label class="form__contacts-label form__contacts-label--email" for="email">АДРЕС
                   ПОЧТЫ</label>
                 <input class="form__contacts-field" required type="email" id="email" placeholder="Введите почту *">
               </li>
@@ -169,7 +172,7 @@
             <label class="form__comments-label" for="comments">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
             <textarea class="form__footer-comments" id="comments" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <input class="form__submit-button" type="submit" value="ОТПРАВИТЬ ФОРМУ" tabindex="0" />
+          <input tabindex="0" class="form__submit-button" type="submit" value="ОТПРАВИТЬ ФОРМУ"  />
           <p class="form__footnote"><span>*</span> — обязательные<span class="form__footnote-desktop"> для заполнения</span> поля
           </p>
         </div>
@@ -179,6 +182,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__logo-img" version="1.1" id="Layer_2-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146px" height="40px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <title>Logo</title>
             <g>
               <path class="page-footer__logo-name" fill="#283645"
                     d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>

@@ -1,6 +1,6 @@
 .feedback {
   color: black;
-  background: linear-gradient(175deg, white 77.7%, #f2f2f2 77.7%);
+  background: #ffffff;
 }
 
 .feedback__wrapper {
@@ -37,7 +37,7 @@
 
 .feedback__toggle {
   margin-left: 128px;
-  padding-bottom: 134px;
+  padding-bottom: 3px;
 }
 
 .feedback__author-description {
@@ -47,11 +47,10 @@
 @media (min-width: 660px) {
   .feedback {
     color: black;
-    background: linear-gradient(175.5deg, white 79.7%, #f2f2f2 79.7%);
   }
 
   .feedback__item {
-    margin: 43px 15px 33px;
+    margin: 46px 15px 33px;
   }
 
   .feedback__wrapper {
@@ -83,14 +82,13 @@
 
   .feedback__toggle {
     margin-left: 299px;
-    padding-bottom: 109px;
+    padding-bottom: 3px;
   }
 }
 
 @media (min-width: 960px) {
   .feedback {
     color: black;
-    background: linear-gradient(176deg, white 73.5%, #f2f2f2 73.5%);
   }
 
   .feedback__wrapper {
@@ -102,8 +100,10 @@
   }
 
   .feedback__text {
+    padding: 0;
     font-size: 18px;
-    padding-right: 20px;
+    padding-right: 30px;
+    margin-bottom: 2px;
   }
 
   .feedback__list {
@@ -112,7 +112,7 @@
 
   .feedback__item {
     width: 960px;
-    padding: 3px 100px 184px;
+    padding: 3px 100px 2px;
     box-sizing: border-box;
     margin-bottom: 0;
   }
@@ -130,7 +130,7 @@
   }
 
   .feedback__author-wrapper {
-    padding-right: 25px;
+    padding-right: 30px;
   }
 
   .feedback__arrow-button-left:hover {
@@ -141,6 +141,15 @@
     background: url("../img/icon-review-arrow-left.svg");
     opacity: 0.1;
   }
+
+  .feedback__arrow-button-left:focus {
+    outline: solid 2px deepskyblue;
+  }
+
+  .feedback__arrow-button-right:focus {
+    outline: solid 2px deepskyblue;
+  }
+
 
   .feedback__arrow-button-right {
     display: block;
